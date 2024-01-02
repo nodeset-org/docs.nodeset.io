@@ -7,3 +7,7 @@
 * [Introduction](stakewise-v3-integration/introduction.md)
 * [FAQ](stakewise-v3-integration/faq.md)
 * [Node Operator Guide (WIP)](stakewise-v3-integration/node-operator-guide-wip.md)
+
+***
+
+* [Node Operator Policies](node-operator-policies.md)
