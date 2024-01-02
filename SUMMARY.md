@@ -1,6 +1,16 @@
 # Table of contents
 
-* [Node Operator Policies](README.md)
+* [NodeSet Documentation](README.md)
+
+## NodeSet
+
+* [Introduction](nodeset/introduction.md)
+
+## Node Operators
+
+* [Applications](node-operators/applications.md)
+* [Policies](node-operators/policies.md)
+* [Best Practices](node-operators/best-practices.md)
 
 ## StakeWise v3 Integration
 
