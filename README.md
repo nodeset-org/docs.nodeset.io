@@ -42,7 +42,7 @@ All NodeSet operators should set up monitoring and notifications for their nodes
 **NodeSet will NEVER contact you through any channel other than the above. NodeSet will NEVER send you a direct message about your node through Discord or other services.**
 {% endhint %}
 
-* Email&#x20;
+* Email
 * Announcements in the #operator-announcement channel of [our Discord server](https://discord.gg/dNshadxVkg)
 
 ### Penalty and Ejection Policy
