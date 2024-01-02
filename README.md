@@ -6,11 +6,17 @@ All effectiveness checks referenced below are derived from the reports by the [r
 
 ***
 
+## Applications
+
+Node operators may apply to join NodeSet at [http://nodeset.io/join](http://nodeset.io/join)
+
+If you do not meet the requirements listed below, you can still apply! We reprocess applications on a regular basis, usually every two weeks. This means you may apply even if you don't meet the criteria (or if you are unsure). We will contact you to let you know the initial status of the application and then again if/when your status changes.
+
 ### Basic Application Requirements
 
 All applicants must fulfill these requirements to join NodeSet.
 
-1. Operators must Minimum of one solo validator, Rocket Pool validator, or validator run on behalf of another staking protocol/business. This validator must have at least 6 months of continuous operation with a minimum effectiveness rating of 95% over the most recent 90 days.
+1. Operators must maintain at least one solo validator, Rocket Pool validator, or a validator on behalf of another staking protocol/business. This validator must have at least 6 months of continuous operation with a minimum effectiveness rating of 95% over the most recent 90 days.
 2. Operators must supply NodeSet with a disaster recovery plan.
 3. Operators must pass a live video interview with questions regarding your ability to troubleshoot issues and maintain a node
 4. NodeSet will conduct additional manual sybil checks. Further details are not public to preserve the security of this process.
@@ -45,7 +51,7 @@ All NodeSet operators should set up monitoring and notifications for their nodes
 **Ejections from NodeSet are PERMANENT!** If you have an issue with your node, you should reach out to us as soon as possible to ensure you are not ejected. We will work with you to exit your validators or rescue your node to help you avoid ejection.
 {% endhint %}
 
-Operators must continuously meet performance requirements to operate with NodeSet. This means that **node operator effectiveness must remain above the minimum threshold of 95% at all times** or else a penalty will be incurred.
+Operators must continuously meet performance requirements to operate with NodeSet. This means that **node operator effectiveness must remain above the minimum threshold of 95% at all times** or they incur a penalty.
 
 Operators who do not meet performance requirements are penalized with strikes and will be ejected immediately after receiving 3 strikes or suffering extended downtime. To account for maintenance and temporary downtime from events outside operator control, strikes reset after 3 months of not receiving any additional strikes. **NodeSet will not make exceptions for any operator for any reason.**
 
