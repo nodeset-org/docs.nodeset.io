@@ -10,4 +10,3 @@ NodeSet provides StakeWise vault administrators with a reliable service partners
 | ------------------------------------------------------------------------------------------------------- | ---------------- | ----------------------------------------------------------- |
 | Gravita Vault                                                                                           | Gravita Protocol | Custom LST, osETH, 10% fees, preferred treatment on Gravita |
 | [NodeSet Holesky Test Vault](https://app.stakewise.io/vault/0x646f5285d195e08e309cf9a5adfdf68d6fcc51c4) | NodeSet          | N/A                                                         |
-|                                                                                                         |                  |                                                             |
