@@ -12,8 +12,8 @@
 * [Policies](node-operators/policies.md)
 * [Best Practices](node-operators/best-practices.md)
 
-## StakeWise v3 Integration
+## StakeWise Integration
 
-* [Introduction](stakewise-v3-integration/introduction.md)
-* [FAQ](stakewise-v3-integration/faq.md)
-* [Node Operator Guide (WIP)](stakewise-v3-integration/node-operator-guide-wip.md)
+* [Introduction](stakewise-integration/introduction.md)
+* [FAQ](stakewise-integration/faq.md)
+* [Node Operator Guide (WIP)](stakewise-integration/node-operator-guide-wip.md)
