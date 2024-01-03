@@ -8,33 +8,19 @@ There are technical limitations which make it difficult to run a fully custom en
 
 ***
 
+## **Installation**
+
 ### **1. Setup eth1 and eth2 clients**
 
-There are many guides available, such as [Somer Esat's excellent solo staker guide](https://github.com/SomerEsat/ethereum-staking-guides). For StakeWise nodes, you only need to set and sync your clients during this step, not generate keys and make deposits -- the StakeWise operator client will do this for you.&#x20;
+StakeWise nodes only need to set and sync your clients during this step, not generate keys and make deposits -- the StakeWise operator client will do this for you.&#x20;
 
-Given the high resource requirements of eth1 clients, we recommend you set up a separate machine with this for all of your nodes to share.
+You can either use local or external clients Given the high resource requirements of eth1 clients, we recommend you set up a separate machine with this for all of your nodes to share.
 
 For Holesky testing, we recommend using a checkpoint sync to speed up the process: [https://eth-clients.github.io/checkpoint-sync-endpoints/#holesky](https://eth-clients.github.io/checkpoint-sync-endpoints/#holesky)&#x20;
-
-### 2. Download and extract the latest release of v3-operator
-
-Example using the v0.3.3 release:
-
-<pre><code>mkdir ~/bin/stakewise
-cd ~/bin/stakewise
-<strong>wget https://github.com/stakewise/v3-operator/releases/latest/download/operator-v0.3.3-linux-amd64.tar.gz
-</strong>tar -xf operator-v0.3.3-linux-amd64.tar.gz
-mv operator-v0.3.3-linux-amd64/operator operator
-rm -r operator-v0.3.3-linux-amd64*
-</code></pre>
 
 
 
 ### 3. Initialize your StakeWise configuration with the NodeSet vault values:
-
-```
-./operator init
-```
 
 #### Goerli Testnet (deprecated)
 
@@ -61,10 +47,6 @@ This step will generate a mnemonic for you. Make sure you store this seed phrase
 
 
 ### 4. Create new validator keys
-
-```
-./operator create-keys
-```
 
 See the SWv3 operator binary documentation for more details.
 
