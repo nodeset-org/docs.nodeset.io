@@ -1,5 +1,7 @@
 # Introduction
 
+<figure><img src="../.gitbook/assets/nodeset-logo-white.png" alt=""><figcaption></figcaption></figure>
+
 ### NodeSet is a Collective of Hundreds of Professional Node Operators
 
 For protocols, DAOs, and investors, NodeSet keeps your assets safe and productive -- while you retain full ownership and custody.
