@@ -26,6 +26,12 @@ Setting up external access to your node while preventing unauthorized activity i
 
 
 
+## Client Diversity
+
+[Client diversity is _**NOT**_ optional -- it's critical. ](https://clientdiversity.org/#why)
+
+
+
 ## Plan Your Node Architecture
 
 When running multiple services which each require a connection to a full Ethereum node, there are many ways to organize your setup. Broadly, a node operation falls into the category of either an "External" or "Internal" architecture, though hybrid setups are sometimes used. Just like designing a house or computer program, Node Operators should consider their individual needs and plan ahead consciously rather than simply adding another service.
