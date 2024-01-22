@@ -18,37 +18,31 @@ Note that the commands here are only examples. We used Debian 12 to create this 
 
 
 
-### 3. Install the NodeSet-StakeWise client
+### 2. Install Hyperdrive and run the StakeWise setup process
 
-Use the interactive installer to set up a StakeWise node. For more information, [see the README for Hyperdrive.](https://github.com/nodeset-org/hyperdrive-stakewise)
+Use the interactive installer for Hyperdrive to set up a StakeWise node. For more information, [see the README for Hyperdrive.](https://github.com/nodeset-org/hyperdrive-stakewise)
+
+
+
+### 3. Update your node to your NodeSet account
+
+a) Go to [https://nodeset.io/dashboard](https://nodeset.io/dashboard) and create and/or login to your NodeSet account
+
+b) Use the dashboard to add your new node address
+
+c) Confirm the registration of your node with Hyperdrive (this is free):&#x20;
+
+`nodeset stakewise register myusername@myemail.com`
 
 
 
 ### 4. Backup your mnemonic and private key
 
-Ensure you store these secrets safely and regularly test your access procedures. We recommend two copies in offline cold storage, each in different locations. This is only in case of emergency, since you can access your secrets at any time from a healthy node.
+Ensure you store these secrets safely and regularly test your access procedures. We recommend two copies in offline cold storage, each in different locations. This is only in case of emergency since you can access your secrets at any time from a healthy node.
 
 
 
-### 6. (Optional) Set your graffiti to identify yourself as a NodeSet operator
-
-Nimbus: [https://nimbus.guide/graffiti.html](https://nimbus.guide/graffiti.html)
-
-```
-nimbus_beacon_node --graffiti="<YOUR_WORDS>"
-```
-
-
-
-### 8. Generate pre-signed exit messages
-
-{% hint style="info" %}
-This step requires validators to already be active on the network long enough to receive an index from the network. Make sure you've completed the prior step before continuing.
-{% endhint %}
-
-Out of an abundance of caution, operators must share pre-signed exit messages with NodeSet so that your validators may be exited if you are unable to exit gracefully.&#x20;
-
-Use [this custom fork of the staking-deposit-cli](https://github.com/nodeset-org/staking-deposit-cli) to generate these messages (or your own preferred solution like ethdo).
+### 6. (Optional)&#x20;
 
 
 

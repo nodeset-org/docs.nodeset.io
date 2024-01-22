@@ -11,6 +11,7 @@
 * [Applications](node-operators/applications.md)
 * [Policies](node-operators/policies.md)
 * [Best Practices](node-operators/best-practices.md)
+* [Planning Your Node Architecture](node-operators/planning-your-node-architecture.md)
 
 ## StakeWise Integration
 
