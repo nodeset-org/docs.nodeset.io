@@ -18,6 +18,7 @@ An external node architecture is one where each separate service connects to a s
 
 * High flexibility and security for network setup
 * Significantly lower hardware and network requirements
+* Easy to support multiple networks (Holesky, Ethereum, etc)
 
 **Cons**
 

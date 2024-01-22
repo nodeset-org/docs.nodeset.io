@@ -14,9 +14,7 @@ Note that the commands here are only examples. We used Debian 12 to create this 
 
 ### **1. Plan your node operation**
 
-[See this section of the Node Operator Best Practices page.](../node-operators/best-practices.md#plan-your-node-architecture)
-
-
+[See this page on planning your node operation.](../node-operators/planning-your-node-architecture.md)
 
 ### 2. Install Hyperdrive and run the StakeWise setup process
 
