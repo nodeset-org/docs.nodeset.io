@@ -4,87 +4,39 @@ Although it is technically possible to run a StakeWise node alongside an existin
 
 Note that the commands here are only examples. We used Debian 12 to create this guide, but your local environment may be different. **Do not simply copy and paste these commands without understanding!**
 
-There are technical limitations which make it difficult to run a fully custom environment for the StakeWise vaults which NodeSet operators service. See [this repository](https://github.com/nodeset-org/hyperdrive-stakewise) for a compatible environment using scripts provided by NodeSet.
+{% hint style="info" %}
+&#x20;here are technical limitations which make it difficult to run a fully custom environment for the NodeSet-StakeWise integration. See [this repository](https://github.com/nodeset-org/hyperdrive-stakewise) for a compatible environment using scripts provided by NodeSet.
+{% endhint %}
 
 ***
 
 ## **Installation**
 
-### **1. Setup eth1 and eth2 clients**
+### **1. Plan your node operation**
 
-StakeWise nodes only need to set and sync your clients during this step, not generate keys and make deposits -- the StakeWise operator client will do this for you.&#x20;
-
-You can either use local or external clients Given the high resource requirements of eth1 clients, we recommend you set up a separate machine with this for all of your nodes to share.
-
-For Holesky testing, we recommend using a checkpoint sync to speed up the process: [https://eth-clients.github.io/checkpoint-sync-endpoints/#holesky](https://eth-clients.github.io/checkpoint-sync-endpoints/#holesky)&#x20;
+[See this section of the Node Operator Best Practices page.](../node-operators/best-practices.md#plan-your-node-architecture)
 
 
 
-### 3. Initialize your StakeWise configuration with the NodeSet vault values:
+### 3. Install the NodeSet-StakeWise client
 
-#### Goerli Testnet (deprecated)
-
-Network: `goerli`&#x20;
-
-Vault: `0x4c54003b39e25d8a6a0157b0b4c14db2a7456199`
-
-**Holesky Testnet**
-
-Network: `holesky`
-
-Vault: `0x01b353Abc66A65c4c0Ac9c2ecF82e693Ce0303Bc`
-
-#### Ethereum Mainnet
-
-Network: `mainnet`
-
-Vault: `0xTODO`
+Use the interactive installer to set up a StakeWise node. For more information, [see the README for Hyperdrive.](https://github.com/nodeset-org/hyperdrive-stakewise)
 
 
 
-This step will generate a mnemonic for you. Make sure you store this seed phrase securely! See \[here] for recommendations on how to store your seed phrase.
+### 4. Backup your mnemonic and private key
+
+Ensure you store these secrets safely and regularly test your access procedures. We recommend two copies in offline cold storage, each in different locations. This is only in case of emergency, since you can access your secrets at any time from a healthy node.
 
 
 
-### 4. Create new validator keys
-
-See the SWv3 operator binary documentation for more details.
-
-
-
-### 5. Set your eth2 client fee recipient
-
-You are **REQUIRED** to use the StakeWise smoothing pool as the fee recipient for your validators. This is a setting passed to your eth2 client. If you use the NodeSet StakeWise docker compose, this is already set up for you.
-
-Nimbus: [https://nimbus.guide/suggested-fee-recipient.html](https://nimbus.guide/suggested-fee-recipient.html)
-
-Holesky: `0xc98F25BcAA6B812a07460f18da77AF8385be7b56`
-
-Mainnet: `0x48319f97E5Da1233c21c48b80097c0FB7a20Ff86`
-
-
-
-See the list of StakeWise compatible relays: [https://docs-v3.stakewise.io/for-operators/smoothing-pool-relays](https://docs-v3.stakewise.io/for-operators/smoothing-pool-relays)
-
-
-
-### 6. Set your grafitti to identify yourself as a NodeSet operator
+### 6. (Optional) Set your graffiti to identify yourself as a NodeSet operator
 
 Nimbus: [https://nimbus.guide/graffiti.html](https://nimbus.guide/graffiti.html)
 
 ```
 nimbus_beacon_node --graffiti="<YOUR_WORDS>"
 ```
-
-
-
-### 7. Import your validator keys into your eth2 client
-
-asdfasdfasdf
-
-
-
-Once these keys have been active long enough to receive a validator index from the network, you can proceed to the next step.
 
 
 
