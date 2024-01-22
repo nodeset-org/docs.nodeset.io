@@ -1,8 +1,8 @@
 # Introduction
 
-[StakeWise](https://docs.stakewise.io/) is a decentralized Ethereum staking protocol with a highly flexible, vault-based architecture.  Staking providers may create public or private vaults, set their own fee levels, and issue a unique liquid staking token. Depositors may select a staking provider directly or spread their assets across a large variety of vaults using the native osETH token.
+[StakeWise](https://docs.stakewise.io/) is a decentralized Ethereum staking protocol with a highly flexible, vault-based architecture. Staking providers may create public or private vaults, set their own fee levels, and issue a unique liquid staking token. Depositors may select a staking provider directly or spread their assets across a large variety of vaults using the native osETH token. This flexibility makes it an ideal foundation for protocols which need direct visibility and immediate access to the underlying collateral.
 
-NodeSet provides StakeWise vault administrators with a reliable service partnership, enabling novel LSTfi products which are more efficient than ever before.
+NodeSet provides StakeWise vault administrators with a reliable service solution, enabling novel LSTfi products which are safer and more efficient than ever before.
 
 ***
 
