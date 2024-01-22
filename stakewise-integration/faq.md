@@ -14,5 +14,6 @@ There are two main safeguards in place for this. First, the [StakeWise oracle DA
 
 Note that even in the case where both NodeSet and our node operators are offline permanently, depositors may still withdraw their assets thanks to the [StakeWise oracle DAO](https://docs-v3.stakewise.io/for-developers/oracles).
 
-**Why do Node Operators need to pay to register nodes?**\
+#### Why do Node Operators need to pay to register nodes?
+
 This is a StakeWise requirement to prevent vaults from being exploited by operators intentionally creating and exiting validators&#x20;
