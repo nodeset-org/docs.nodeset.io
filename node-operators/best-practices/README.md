@@ -2,7 +2,7 @@
 
 ## Intro
 
-With NodeSet, your node's performance impacts others' rewards. Therefore, [NodeSet requires  strict performance standards for operators](../policies.md#penalty-and-ejection-policy). These best practices help you uphold community standards and elevate your operation to a more professional level.
+With NodeSet, your node's performance impacts others' rewards. Therefore, [NodeSet requires  strict performance standards for operators](../node-operator-policies.md#penalty-and-ejection-policy). These best practices help you uphold community standards and elevate your operation to a more professional level.
 
 ## Notifications
 
