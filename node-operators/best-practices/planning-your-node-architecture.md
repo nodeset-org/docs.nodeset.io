@@ -10,7 +10,7 @@ When planning your setup, remember to create fallback and backup plans! If somet
 
 ### External
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Three examples of an external node architecture</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Three examples of an external node architecture</p></figcaption></figure>
 
 An external node architecture is one where each separate service connects to a single external node, which usually lives on entirely separate hardware within the same network.&#x20;
 
@@ -34,7 +34,7 @@ An external node architecture is one where each separate service connects to a s
 
 ### Internal
 
-<figure><img src="../.gitbook/assets/image (2).png" alt="" width="375"><figcaption><p>An example of an internal node architecture</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt="" width="375"><figcaption><p>An example of an internal node architecture</p></figcaption></figure>
 
 An internal architecture is one where every service is completely isolated, running its own local copy of a full node.
 
