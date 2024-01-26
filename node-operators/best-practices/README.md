@@ -26,6 +26,8 @@ Setting up external access to your node while preventing unauthorized activity i
 
 [See this page for NodeSet's client diversity policy.](./#client-diversity)
 
+We encourage users to consider high-redundancy setups with at least one fallback node, and if possible, [use a solution such as Vouch to coordinate and verify a multi-client configuration](https://www.attestant.io/posts/helping-client-diversity/).
+
 ## Graffiti
 
 Operators should identify themselves via their graffiti. This helps NodeSet understand our operator network better and will assist you in debugging if there is an issue.
