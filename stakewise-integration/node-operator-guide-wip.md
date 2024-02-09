@@ -20,19 +20,19 @@ Note that the commands here are only examples. We used Debian 12 to create this 
 
 Use the interactive installer for Hyperdrive to set up a StakeWise node. For more information, [see the README for Hyperdrive.](https://github.com/nodeset-org/hyperdrive-stakewise)
 
+{% hint style="info" %}
+Your node wallet must have enough ETH in it to register validators, so don't forget to fund it with enough ETH to pay for gas! We recommend at least 0.1 ETH, since it costs about 0.01 at 30 gwei to register one validator.
+{% endhint %}
+
 ### 3. Update your node to your NodeSet account
 
 a) Go to [https://nodeset.io/dashboard](https://nodeset.io/dashboard) and create and/or login to your NodeSet account
 
 b) Use the dashboard to add your new node address
 
-c) Confirm the registration of your node with Hyperdrive (this is free):&#x20;
-
-`nodeset stakewise register myusername@myemail.com`
-
 ### 4. Backup your mnemonic and private key
 
-Ensure you store these secrets safely and regularly test your access procedures. We recommend two copies in offline cold storage, each in different locations. This is only in case of emergency since you can access your secrets at any time from a healthy node.
+Ensure you store these secrets safely and regularly test your access procedures. We recommend two copies in offline cold storage, each in different locations.
 
 ### 5. Set your payment address in the NodeSet dashboard
 
