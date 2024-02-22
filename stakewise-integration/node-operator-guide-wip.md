@@ -5,7 +5,7 @@ Although it is technically possible to run a StakeWise node alongside an existin
 Note that the commands here are only examples. We used Debian 12 to create this guide, but your local environment may be different. **Do not simply copy and paste these commands without understanding!**
 
 {% hint style="info" %}
-&#x20;here are technical limitations which make it difficult to run a fully custom environment for the NodeSet-StakeWise integration. See [this repository](https://github.com/nodeset-org/hyperdrive-stakewise) for a compatible environment using scripts provided by NodeSet.
+&#x20;here are technical limitations which make it difficult to run a fully custom environment for the NodeSet-StakeWise integration. See [this repository](https://github.com/nodeset-org/hyperdrive) for a compatible environment using scripts provided by NodeSet.
 {% endhint %}
 
 ***
@@ -18,11 +18,33 @@ Note that the commands here are only examples. We used Debian 12 to create this 
 
 ### 2. Install Hyperdrive and run the StakeWise setup process
 
-Use the interactive installer for Hyperdrive to set up a StakeWise node. For more information, [see the README for Hyperdrive.](https://github.com/nodeset-org/hyperdrive-stakewise)
+Use the interactive installer for Hyperdrive to set up a StakeWise node. For more information, [see the README for Hyperdrive.](https://github.com/nodeset-org/hyperdrive)
 
 {% hint style="info" %}
 Your node wallet must have enough ETH in it to register validators, so don't forget to fund it with enough ETH to pay for gas! We recommend at least 0.1 ETH, since it costs about 0.01 at 30 gwei to register one validator.
 {% endhint %}
+
+#### 2.1 Install Hyperdrive service using the CLI:
+`hyperdrive service install`
+You may need to restart your shell as per instructions.
+
+#### 2.2. Follow the interactive setup to configure your node:
+`hyperdrive service config`
+
+If you wish to use checkpoint sync, you can pick one of the URLs from: https://eth-clients.github.io/checkpoint-sync-endpoints/
+
+Remember to enable module support for Stakewise. Your node should start syncing when you're done.
+
+#### 2.3 Initialize Stakewise wallet using hyperdrive node wallet
+`hyperdrive stakewise wallet init`
+
+#### 2.4. Generate validator keys
+`hyperdrive stakewise wallet generate-keys`
+Status should show active validator pubkeys:
+`hyperdrive stakewise status` 
+
+#### 2.5 Upload deposit data
+`hyperdrive stakewise nodeset upload-deposit-data`
 
 ### 3. Update your node to your NodeSet account
 
