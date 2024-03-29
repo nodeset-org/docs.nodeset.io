@@ -1,12 +1,10 @@
-# Policies
+# Node Operator Policies
 
 This page describes the policies applied to NodeSet node operators. These policies may be updated at any time, and material changes will be announced in advance.
 
 All effectiveness checks referenced below are derived from the reports by the [rated.network](http://rated.network) API.
 
 ***
-
-
 
 ### Operator Communication Channels
 
@@ -25,7 +23,7 @@ All effectiveness checks referenced below are derived from the reports by the [r
 
 Operators must continuously meet performance requirements to operate with NodeSet. This means that **node operator effectiveness must remain above the minimum threshold of 95% at all times** or they incur a penalty.
 
-Operators who do not meet performance requirements are penalized with strikes and will be ejected immediately after receiving 3 strikes or suffering extended downtime. To account for maintenance and temporary downtime from events outside operator control, strikes reset after 3 months of not receiving any additional strikes. **NodeSet will not make exceptions for any operator for any reason.**
+Operators who do not meet performance requirements are penalized with strikes and will be ejected immediately after receiving 3 strikes or suffering extended downtime. To account for maintenance and temporary downtime from events outside operator control, strikes reset after 3 months of not receiving any additional strikes. **NodeSet will not make exceptions for any operator for any reason other than large, network-level events.**
 
 | **Scenario**                          | **Penalty** |
 | ------------------------------------- | ----------- |
