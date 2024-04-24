@@ -1,11 +1,11 @@
-# Node Operator Guide (WIP)
+# Node Operator Guide
 
 Although it is technically possible to run a StakeWise node alongside an existing Ethereum node, we recommend using a completely isolated system, and this guide assumes this is the case.
 
 Note that the commands here are only examples. We used Debian 12 to create this guide, but your local environment may be different. **Do not simply copy and paste these commands without understanding!**
 
 {% hint style="info" %}
-here are technical limitations which make it difficult to run a fully custom environment for the NodeSet-StakeWise integration. See [this repository](https://github.com/nodeset-org/hyperdrive) for a compatible environment using scripts provided by NodeSet.
+There are technical limitations which make it very difficult to run a fully custom node environment for NodeSet's StakeWise integration. Therefore, you must use [the Hyperdrive client](https://github.com/nodeset-org/hyperdrive) to connect appropriately to NodeSet's web services.
 {% endhint %}
 
 ***
@@ -48,7 +48,7 @@ This command will generate new validator keys, upload them to NodeSet so we can 
 
 Now, the status command should show active validator pubkeys: `hyperdrive stakewise status`
 
-### 3. Update your node to your NodeSet account
+### 3. Add your node address to your NodeSet account
 
 a) Go to [https://nodeset.io/dashboard](https://nodeset.io/dashboard) (beta testers should use [https://staging.nodeset.io/dashboard](https://staging.nodeset.io/dashboard)) to create or login to your NodeSet account. Users who have gone through the onboarding process will automatically be given the StakeWise permission.
 
@@ -60,12 +60,12 @@ Ensure you store your secrets safely and regularly test your access procedures. 
 
 ### 5. Maintain your node
 
-Once NodeSet registers your node, it will sync its deposit data with the vault, and ETH may be automatically deposited into these validators at any time.
+Once NodeSet registers your node, we will sync its deposit data with the vault, and ETH may be automatically deposited into these validators at any time.
 
 As always, you should [use the same best practices for maintaining your operation](../node-operators/best-practices/).
 
 {% hint style="warning" %}
-Be careful! Even if there is no ETH deposited into your node's validators when it goes down, Ethereum never goes down, so deposits might be made to those validators even while the node is offline. If this happens, those validators will be penalized, and you may eventually be ejected from NodeSet!
+Be careful! Even if there are no validators activated when your node goes down, Ethereum never goes down, so deposits might be made to those validators even while the node is offline. If this happens, those validators will be penalized, and you may eventually be ejected from NodeSet!
 {% endhint %}
 
 If you no longer wish to participate as an operator for any of NodeSet's StakeWise vaults, please contact us at info@nodeset.io. We are working on a way to exit your operation automatically through the dashboard, but this is not ready yet.

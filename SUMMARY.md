@@ -19,7 +19,7 @@
 
 * [Introduction](stakewise-integration/introduction.md)
 * [FAQ](stakewise-integration/faq.md)
-* [Node Operator Guide (WIP)](stakewise-integration/node-operator-guide-wip.md)
+* [Node Operator Guide](stakewise-integration/node-operator-guide-wip.md)
 
 ## Constellation
 
