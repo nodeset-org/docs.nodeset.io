@@ -6,13 +6,25 @@ description: >-
 
 # xrETH
 
-Functionally, xrETH is very similar to [rETH](https://docs.rocketpool.net/guides/staking/overview#the-reth-token), except it offers the extra advantage of returning the full ETH staking APR. This gives xrETH a similar yield profile to solo staking while remaining liquid.
+xrETH is Constellation's liquid staking token, offering several unique properties compared to other LST designs.
+
+#### Full ETH Staking Rewards
+
+Functionally, xrETH is very similar to [rETH](https://docs.rocketpool.net/guides/staking/overview#the-reth-token), but it offers the additional advantage of returning the full ETH staking APR. This gives xrETH a similar yield profile to solo staking while remaining liquid.
+
+#### Value Accrual Design (not rebasing)
 
 Also like rETH, xrETH uses the [cToken model made famous by Compound](https://docs.compound.finance/v2/ctokens/) where the protocol's  exchange rate for xrETH will rise over time with the value of earned rewards. This model is more gas efficient than a rebasing token, and it also may offer tax advantages to users in certain jurisdictions.
 
-### Fee Calculations
+#### **Exposure to Slashing**
 
-xrETH is designed to receive the same yield as standard Ethereum staking (including MEV). To achieve this, the ETH exchanged for xrETH is used inside Rocket Pool to create new minipools alongside rETH.
+xrETH has no built-in slashing protection. However,&#x20;
+
+If you prefer to exchange some yield for additional slashing protection, you may consider [using a StakeWise vault operated by NodeSet's operators](broken-reference) or [using rETH instead](https://stake.rocketpool.net/).
+
+### Fees
+
+xrETH is designed to receive the same yield as standard Ethereum staking (including MEV). To achieve this, the ETH exchanged for xrETH is used inside Rocket Pool to create new minipools alongside rETH, and the rETH commission is used to incentivize other protocol participants. Although xrETH minters may consider it to be "feeless", there is technically a fee charged by the protocol.
 
 Node operators on Rocket Pool receive the following rewards per ETH bonded:
 

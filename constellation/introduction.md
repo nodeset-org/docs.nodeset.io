@@ -21,7 +21,7 @@ Constellation liquidizes the NO bond, opening it up to external investors via to
 
 There are three main roles for participants in this system:
 
-1\) Depositors (xrETH or xRPL holders)\
+1\) Depositors ([xrETH](xreth.md) or [xRPL](xrpl.md) holders)\
 2\) Node operators\
 3\) Administrator
 
