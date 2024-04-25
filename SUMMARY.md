@@ -26,3 +26,5 @@
 * [Overview](constellation/introduction.md)
 * [xrETH](constellation/xreth.md)
 * [xRPL](constellation/xrpl.md)
+* [Node Operators](constellation/node-operators.md)
+* [Administrator](constellation/administrator.md)
