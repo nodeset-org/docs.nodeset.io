@@ -10,7 +10,7 @@ All NodeSet members are eligible for participation, but NodeSet will not add ope
 
 #### What happens if a node operator loses their keys or becomes incapacitated?
 
-There are two main safeguards in place for this. First, the [StakeWise oracle DAO](https://docs.stakewise.io/for-developers/oracles) will automatically exit validators which have a balance lower than \[31.75 ETH]. Secondly, operators send NodeSet a pre-signed exit message for each of their StakeWise v3 validators, and we can broadcast these messages if an operator loses their keys or becomes incapacitated. These are temporary safety measures which are only necessary until something like [EIP 7002 is included](https://eips.ethereum.org/EIPS/eip-7002) in Ethereum.
+There are two main safeguards in place for this. First, the [StakeWise oracle DAO](https://docs.stakewise.io/for-developers/oracles) will automatically exit validators which have a balance lower than 31.8 ETH. Secondly, operators send NodeSet a pre-signed exit message for each of their StakeWise v3 validators, and we can broadcast these messages if an operator loses their keys or becomes incapacitated. These are temporary safety measures which are only necessary until something like [EIP 7002 is included](https://eips.ethereum.org/EIPS/eip-7002) in Ethereum.
 
 Note that even in the case where both NodeSet and our node operators are offline permanently, depositors may still withdraw their assets thanks to the [StakeWise oracle DAO](https://docs-v3.stakewise.io/for-developers/oracles).
 
