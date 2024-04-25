@@ -10,7 +10,7 @@ When planning your setup, remember to create fallback and backup plans! If somet
 
 ### External
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Three examples of an external node architecture</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Three examples of an external node architecture</p></figcaption></figure>
 
 An external node architecture is one where each separate service connects to a single external node, which usually lives on entirely separate hardware within the same network.&#x20;
 
