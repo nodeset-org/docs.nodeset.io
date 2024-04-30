@@ -4,7 +4,7 @@
 
 Currently the requirements for operating a NodeSet node are the same as [those of Etheruem solo staking](https://docs.ethstaker.cc/ethstaker-knowledge-base/hardware/hardware-requirements). This is because the only NodeSet opportunities available at the moment are for Ethereum staking, but in the future, as opportunities expand, hardware requirements for those will be listed separately.
 
-If you're looking for low-cost hardware with minimum power draw, we recommend taking a look at [the Proteus, a project developed by our Lead Client Engineer, Joe Clapis](https://github.com/mercadian/proteus/wiki/Getting-Started-with-the-Proteus).
+If you're looking for low-cost hardware with minimum power draw, we recommend taking a look at [the Proteus, a project developed by our Lead Client Engineer, Joe Clapis](https://github.com/mercadian/proteus/wiki).
 
 
 
