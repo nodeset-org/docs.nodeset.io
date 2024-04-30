@@ -8,32 +8,101 @@ description: Hyperdrive is an all-in-one node management system for NodeSet node
 
 NodeSet operators use the Hyperdrive client for managing their nodes. It supports all Ethereum consensus and execution clients and features a flexible, modular design to allow multiple services to run side-by-side or across multiple nodes.
 
-NodeSet is working on additional features such as a client SDK, package management, and hardware resource management so that Hyperdrive as the best node management platform
+NodeSet is working on additional features such as a client SDK, package management, and hardware resource management to make Hyperdrive the world's best node management platform.
 
-### Installation
+## Installation
 
-NodeSet provides packaged versions of each release so operators can manage their installations via their system package manager. To use Hyperdrive, simply add the NodeSet package repository to your package source list and then install it via the system package manager.
+Installing Hyperdrive can be done in two ways: via the `apt` package manager for Debian-based systems, or manually via the CLI (for any Linux or macOS system).
 
-**E.g. Debian:**
+### Via the Package Manager (for Debian-based systems with `apt`)
 
-`sudo add-apt-repository 'deb https://packagecloud.io/nodeset/hyperdrive'`
+If your system uses the `apt` package manager, you can install Hyperdrive by enabling our repository.
 
-`sudo apt-get update`
+#### Install Docker
 
-`sudo apt-get install hyperdrive`
+Start by installing Docker for your system following the [Docker installation instructions](https://docs.docker.com/engine/install/).
 
-To finalize the installation, install and define a configuration by running `hyperdrive service install`, then `hyperdrive service config`.
+Next, add your user to the group of Docker administrators:
 
-If you're running on a testnet and wish to use checkpoint sync, you can use [one of the URLs from this list](https://eth-clients.github.io/checkpoint-sync-endpoints/).
+```
+sudo usermod -aG docker $USER
+```
 
-### Updating
+Finally, exit the terminal session and start a new one (log out and back in or close and re-open SSH) for the new permissions to take effect.
 
-Once installed, Hyperdrive can be updated via the package manger as usual.
+#### Install Hyperdrive
 
-**E.g. for Debian:**
+Update the system packages and install some prerequisites:
 
-`sudo apt update && sudo apt dist-upgrade && sudo apt autoremove`
+```
+sudo apt update && sudo apt install curl gnupg apt-transport-https ca-certificates
+```
 
-### Recovery
+Save the Hyperdrive repository signing key:
+
+```
+sudo install -m 0755 -d /etc/apt/keyrings && sudo curl -fsSL https://packagecloud.io/nodeset/hyperdrive/gpgkey -o /etc/apt/keyrings/hyperdrive.asc
+```
+
+Add the Hyperdrive repository to your `apt` list:
+
+```
+sudo tee -a /etc/apt/sources.list.d/hyperdrive.list << EOF
+deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/hyperdrive.asc] https://packagecloud.io/nodeset/hyperdrive/any/ any main
+deb-src [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/hyperdrive.asc] https://packagecloud.io/nodeset/hyperdrive/any/ any main
+EOF
+```
+
+Install Hyperdrive via `apt`:
+
+```
+sudo apt update && sudo apt install hyperdrive
+```
+
+### Manual Install (for all systems)
+
+If you can't or don't want to use the `apt` process, you can install Hyperdrive manually instead.
+
+1. Download the CLI from [the latest GitHub release](https://github.com/nodeset-org/hyperdrive/releases/latest).&#x20;
+
+Note there are four options: two for Linux and two for Darwin (macOS); both are available for `amd64` and `arm64`. To have parity with the package installer, we recommend saving it to `/usr/bin/hyperdrive`. For example, on an `x64` Linux system, you could do:
+
+```
+sudo wget https://github.com/nodeset-org/hyperdrive/releases/latest/download/hyperdrive-cli-linux-amd64 -O /usr/bin/hyperdrive && sudo chmod +x /usr/bin/hyperdrive
+```
+
+Make sure you run `chmod +x` on it before trying to use it.
+
+2. Install Hyperdrive via the CLI:
+
+```
+hyperdrive service install
+```
+
+This will also handle installing all of the dependencies and permissions for you.
+
+## Updates
+
+### Via the Package Manager (for Debian-based systems with `apt`)
+
+If you installed Hyperdrive via the package manager, you simply need to run the following to update it when a new release is out (along with any other system packages that are out of date):
+
+```
+sudo apt update && sudo apt dist-upgrade && sudo apt auto-remove
+```
+
+### Manual Update (for all systems)
+
+If you installed Hyperdrive manually, start by downloading the new CLI using the same process you followed in step 1 of the [manual installation](https://github.com/nodeset-org/hyperdrive#manual-install-for-all-systems) section.
+
+Once it's downloaded, run the following command:
+
+```
+hyperdrive service install -d
+```
+
+Note the `-d` which skips Operating System dependencies, since you already have them.
+
+## Recovery
 
 In case of hardware failure, operators may recover their prior wallet via the `hyperdrive wallet recover` command.&#x20;
