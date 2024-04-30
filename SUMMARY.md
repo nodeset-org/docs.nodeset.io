@@ -5,6 +5,7 @@
 ## NodeSet
 
 * [Introduction](nodeset/introduction.md)
+* [Security Notice](nodeset/security-notice.md)
 
 ## Node Operators
 
@@ -21,6 +22,7 @@
 * [Introduction](stakewise-integration/introduction.md)
 * [FAQ](stakewise-integration/faq.md)
 * [Node Operator Guide](stakewise-integration/node-operator-guide-wip.md)
+* [Security Information](stakewise-integration/security-information.md)
 
 ## Constellation
 
@@ -30,3 +32,9 @@
 * [Node Operators](constellation/node-operators.md)
 * [Administrator](constellation/administrator.md)
 * [FAQ](constellation/faq.md)
+* [Security Information](constellation/security-information.md)
+
+## NodeSet Dashboard
+
+* [Introduction](nodeset-dashboard/introduction.md)
+* [Security Information](nodeset-dashboard/security-information.md)
