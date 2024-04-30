@@ -8,9 +8,9 @@ NodeSet takes the security of our work seriously, engaging auditors and independ
 
 [Constellation](../constellation/security-information.md)
 
-StakeWise
+[StakeWise](../stakewise-integration/security-information.md)
 
-NodeSet Dashboard
+[NodeSet Dashboard](../nodeset-dashboard/security-information.md)
 
 ***
 
