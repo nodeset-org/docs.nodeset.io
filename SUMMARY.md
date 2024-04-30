@@ -14,6 +14,7 @@
 * [Best Practices](node-operators/best-practices/README.md)
   * [Planning Your Node Architecture](node-operators/best-practices/planning-your-node-architecture.md)
 * [Hyperdrive](node-operators/hyperdrive.md)
+* [FAQ](node-operators/faq.md)
 
 ## StakeWise Integration
 
