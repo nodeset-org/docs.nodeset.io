@@ -1,5 +1,9 @@
 # Security Information
 
+{% hint style="info" %}
+If you wish to report any security-related issues, please email us directly at **info@nodeset.io**
+{% endhint %}
+
 ### Audits
 
 The StakeWise v3 contracts are audited by leading independent security professionals. Please see [the reports in their repository](https://github.com/stakewise/v3-core/tree/main/audits) for more information.

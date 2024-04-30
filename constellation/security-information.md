@@ -1,5 +1,9 @@
 # Security Information
 
+{% hint style="info" %}
+If you wish to report any security-related issues, please email us directly at **info@nodeset.io**
+{% endhint %}
+
 ### Audits
 
 Constellation will be audited by leading independent security professionals. When these reports are available, they will be released publicly here.

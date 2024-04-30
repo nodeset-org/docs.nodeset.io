@@ -1,5 +1,9 @@
 # Security Information
 
+{% hint style="info" %}
+If you wish to report any security-related issues, please email us directly at **info@nodeset.io**
+{% endhint %}
+
 ### Penetration Testing
 
 The NodeSet Dashboard undergoes regular penetration tests by leading independent security professionals. However, nodeset.io does not interact with any assets and is therefore closed-source for maximum security. Due to this and the sensitive nature of these security reports, these reports will not be released publicly. However, for the sake of transparency, we will list the firms engaged in penetration testing here.
