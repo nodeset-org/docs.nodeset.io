@@ -18,47 +18,93 @@ There are technical limitations which make it very difficult to run a fully cust
 
 ### 2. Install Hyperdrive and run the StakeWise setup process
 
-Use the interactive installer for Hyperdrive to set up a StakeWise node. For more information, [see the README for Hyperdrive.](https://github.com/nodeset-org/hyperdrive)
-
-{% hint style="info" %}
-Your node wallet must have enough ETH in it to register validators, so don't forget to fund it with enough ETH to pay for gas! We recommend at least 0.1 ETH, since it costs about 0.01 at 30 gwei to register one validator.
-{% endhint %}
-
 #### 2.1 Install Hyperdrive service using the CLI:
 
-`hyperdrive service install` You may need to restart your shell as per instructions.
+```bash
+hyperdrive service install
+```
+
+You may need to restart your shell as per instructions. Also see the dedicated page for setup instructions for [Hyperdrive](https://docs.nodeset.io/node-operators/hyperdrive).
 
 #### 2.2. Follow the interactive setup to configure your node:
 
-`hyperdrive service config`
+```bash
+hyperdrive service config
+```
 
 If you wish to use checkpoint sync, you can pick [one of the URLs from this list](https://eth-clients.github.io/checkpoint-sync-endpoints/).
 
 Remember to enable module support for Stakewise during the setup process! Your node should start syncing automatically when you're done with the installation, but we recommend you keep an eye on things using `hyperdrive service logs`.
 
+If you are running the Rocket Pool Smartnode Stack on the same machine, and want to use it's consensus and execution client, you will have to do the following:
+
+a) Expose the Smarnode Stack RPC and API endpoints externally. In the Settings Manager (`rocketpool service configure`) in both the ETH1 and ETH2 categories, choose *"Open to External hosts"* from the respective dropdowns. *Open to localhost* is not sufficient, due to how Docker networking works.
+
+b) During setup/configuration choose "External mode". Determine the external IP of your host (e.g. using `ifconfig | grep 'eth0:' -A 1`), and use that when specifying the external ETH1 and ETH2 endpoints.
+
 #### 2.3 Initialize the Stakewise package's connection to the Hyperdrive node wallet
 
-`hyperdrive stakewise wallet init`
+```bash
+hyperdrive stakewise wallet init
+```
 
-#### 2.4. Generate validator keys
+(((Don't you have to run `hyperdrive wallet init` first? I don't remember...)))
 
-`hyperdrive stakewise wallet generate-keys`&#x20;
+#### 2.4 Add your node address to your NodeSet account
 
-This command will generate new validator keys, upload them to NodeSet so we can refer them to the StakeWise vault, and&#x20;
+Fetch your node address:
 
-Now, the status command should show active validator pubkeys: `hyperdrive stakewise status`
-
-### 3. Add your node address to your NodeSet account
+```bash
+hyperdrive wallet status
+```
 
 a) Go to [https://nodeset.io/dashboard](https://nodeset.io/dashboard) (beta testers should use [https://staging.nodeset.io/dashboard](https://staging.nodeset.io/dashboard)) to create or login to your NodeSet account. Users who have gone through the onboarding process will automatically be given the StakeWise permission.
 
 b) Use the dashboard to add your new node address.
 
-### 4. Backup your node wallet mnemonic and/or private key
+Note regarding addresses: You can use any address you like to log in. You will need to provide the e-mail you signed up to NodeSet with. That's how you are actually authenticated. Then add your node address at https://staging.nodeset.io/dashboard/stakewise/authorized-addresses.
+
+#### 2.5 Get some Holesky ETH
+
+You can use the [Rocket Pool faucet](https://docs.rocketpool.net/guides/testnet/overview#getting-test-eth-on-holesky) to do so.
+
+#### 2.6 Generate some validator keys
+
+```bash
+hyperdrive stakewise wallet generate-keys
+```
+
+This will generate new validator keys derived from your node wallet. You can run this command again.
+
+{% hint style="info" %}
+Your node wallet must have enough ETH in it to register validators, so don't forget to fund it with enough ETH to pay for gas! We recommend at least 0.1 ETH, since it costs about 0.01 at 30 gwei to register one validator.
+{% endhint %}
+
+Each operator is currently allotted 10 validators, but this may be increased if there are not enough operators to service all of the deposits.
+
+#### 2.7 Upload the validator keys to NodeSet
+
+```bash
+hyperdrive stakewise nodeset upload-deposit-data
+```
+
+This uploads the combined deposit data for all of your validator keys to NodeSet's Stakewise vault, so they can be assigned new deposits.
+
+#### 2.8 Validate your setup
+
+The status command should now show your active validator pubkeys:
+
+```bash
+hyperdrive stakewise status
+```
+
+You should also see those validators in the NodeSet dashboard at https://staging.nodeset.io/dashboard/stakewise/validators.
+
+### 3. Backup your node wallet mnemonic and/or private key
 
 Ensure you store your secrets safely and regularly test your access procedures. We recommend two copies in offline cold storage, each in different locations.
 
-### 5. Maintain your node
+### 4. Maintain your node
 
 Once NodeSet registers your node, we will sync its deposit data with the vault, and ETH may be automatically deposited into these validators at any time.
 
