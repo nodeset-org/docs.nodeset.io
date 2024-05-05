@@ -24,7 +24,15 @@ Use the interactive installer for Hyperdrive to set up a StakeWise node. For mor
 Your node wallet must have enough ETH in it to register validators, so don't forget to fund it with enough ETH to pay for gas! We recommend at least 0.1 ETH, since it costs about 0.01 at 30 gwei to register one validator.
 {% endhint %}
 
-####
+#### 2.1 Install Hyperdrive service using the CLI:
+
+`hyperdrive service install` You may need to restart your shell as per instructions.
+
+#### 2.2. Follow the interactive setup to configure your node:
+
+`hyperdrive service config`
+
+If you wish to use checkpoint sync, you can pick [one of the URLs from this list](https://eth-clients.github.io/checkpoint-sync-endpoints/).
 
 Remember to enable module support for Stakewise during the setup process! Your node should start syncing automatically when you're done with the installation, but we recommend you keep an eye on things using `hyperdrive service logs`.
 
