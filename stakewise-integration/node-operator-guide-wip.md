@@ -100,6 +100,19 @@ hyperdrive stakewise status
 
 You should also see those validators in the NodeSet dashboard at https://staging.nodeset.io/dashboard/stakewise/validators.
 
+And seeing something akin to these lines in your logs (`hyperdrive service logs`) is expected behaviour:
+
+```bash
+WARNING  Cannot find validator with public key 0xasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf in keystores.
+WARNING  There are no available validators in the current deposit data to proceed with registration. To register additional validators, you must upload new deposit data.
+```
+
+From the Discord channel:
+
+> Wander — Today at 4:56 PM <br />
+> Unfortunately this is normal <br />
+> StakeWise's operator binary wasn't designed with the NodeSet use-case in mind, but they have been steadily improving things over time so it may be fixed eventually.
+
 ### 3. Backup your node wallet mnemonic and/or private key
 
 Ensure you store your secrets safely and regularly test your access procedures. We recommend two copies in offline cold storage, each in different locations.
