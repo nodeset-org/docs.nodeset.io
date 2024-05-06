@@ -6,7 +6,7 @@ The vault fee is split between the vault admin, NodeSet, and operators via smart
 
 #### Who is chosen to be a StakeWise vault operator for NodeSet?
 
-All NodeSet members are eligible for participation, but NodeSet will not add operators to the StakeWise vaults until there are sufficient deposits. Each operator is currently allotted 10 validators, but this may be increased if there are not enough operators to service all of the deposits.
+All NodeSet members are eligible for participation, but NodeSet will not add operators to the StakeWise vaults until there are sufficient deposits.
 
 #### What happens if a node operator loses their keys or becomes incapacitated?
 
@@ -17,3 +17,12 @@ Note that even in the case where both NodeSet and our node operators are offline
 #### Why do Node Operators need to pay to register validators?
 
 This is a StakeWise requirement to prevent vaults from being exploited by operators that intentionally creating and exiting validators at the expense of the vault. Validator registration costs approximately 0.01 ETH at 30 gwei gas and can happen at any time. Even when running the maximum number of validators, ongoing vault activity may cause exits and new registrations, so we recommend operators always keep a minimum balance of 0.1 ETH in their SW node wallet. Payback period for a validator depends on the vault parameters for operator compensation, but as a rule of thumb, it takes operators approximately one week of uptime to repay gas costs for new validator registration.
+
+**Why do I see these warnings in my Hyperdrive logs when running the StakeWise package?**
+
+```bash
+WARNING  Cannot find validator with public key 0x12345... in keystores.
+WARNING  There are no available validators in the current deposit data to proceed with registration. To register additional validators, you must upload new deposit data.
+```
+
+StakeWise's client code was not designed to be used with hundreds of decentralized operators, so if you see these lines lines in your logs (i.e. `hyperdrive service logs`), this is expected behavior. We are working with the StakeWise team to improve their tooling to support our use-case more gracefully.

@@ -81,6 +81,16 @@ hyperdrive service install
 
 This will also handle installing all of the dependencies and permissions for you.
 
+## Configuration
+
+Make sure to configure your new node after installation.
+
+```bash
+hyperdrive service config
+```
+
+If you're on testnet, we recommend choosing a checkpoint sync [one of the URLs from this list](https://eth-clients.github.io/checkpoint-sync-endpoints/).  For safety, you cannot use a checkpoint sync with mainnet.
+
 ## Updates
 
 ### Via the Package Manager (for Debian-based systems with `apt`)
