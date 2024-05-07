@@ -1,16 +1,4 @@
----
-description: Hyperdrive is an all-in-one node management system for NodeSet node operators.
----
-
-# Hyperdrive
-
-[https://github.com/nodeset-org/hyperdrive](https://github.com/nodeset-org/hyperdrive)
-
-NodeSet operators use the Hyperdrive client for managing their nodes. It supports all Ethereum consensus and execution clients and features a flexible, modular design to allow multiple services to run side-by-side or across multiple nodes.
-
-NodeSet is working on additional features such as a client SDK, package management, and hardware resource management to make Hyperdrive the world's best node management platform.
-
-## Installation
+# Installation
 
 Installing Hyperdrive can be done in two ways: via the `apt` package manager for Debian-based systems, or manually via the CLI (for any Linux or macOS system).
 
@@ -80,39 +68,3 @@ hyperdrive service install
 ```
 
 This will also handle installing all of the dependencies and permissions for you.
-
-## Configuration
-
-Make sure to configure your new node after installation.
-
-```bash
-hyperdrive service config
-```
-
-If you're on testnet, we recommend choosing a checkpoint sync [one of the URLs from this list](https://eth-clients.github.io/checkpoint-sync-endpoints/).  For safety, you cannot use a checkpoint sync with mainnet.
-
-## Updates
-
-### Via the Package Manager (for Debian-based systems with `apt`)
-
-If you installed Hyperdrive via the package manager, you simply need to run the following to update it when a new release is out (along with any other system packages that are out of date):
-
-```
-sudo apt update && sudo apt dist-upgrade && sudo apt auto-remove
-```
-
-### Manual Update (for all systems)
-
-If you installed Hyperdrive manually, start by downloading the new CLI using the same process you followed in step 1 of the [manual installation](https://github.com/nodeset-org/hyperdrive#manual-install-for-all-systems) section.
-
-Once it's downloaded, run the following command:
-
-```
-hyperdrive service install -d
-```
-
-Note the `-d` which skips Operating System dependencies, since you already have them.
-
-## Recovery
-
-In case of hardware failure, operators may recover their prior wallet via the `hyperdrive wallet recover` command.&#x20;

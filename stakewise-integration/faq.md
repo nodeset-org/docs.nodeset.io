@@ -20,9 +20,12 @@ This is a StakeWise requirement to prevent vaults from being exploited by operat
 
 **Why do I see these warnings in my Hyperdrive logs when running the StakeWise package?**
 
-```bash
-WARNING  Cannot find validator with public key 0x12345... in keystores.
+```
 WARNING  There are no available validators in the current deposit data to proceed with registration. To register additional validators, you must upload new deposit data.
 ```
 
-StakeWise's client code was not designed to be used with hundreds of decentralized operators, so if you see these lines lines in your logs (i.e. `hyperdrive service logs`), this is expected behavior. We are working with the StakeWise team to improve their tooling to support our use-case more gracefully.
+```
+WARNING  Cannot find validator with public key 0x... in keystores.
+```
+
+StakeWise's client code was not designed to be used with many decentralized operators, so these lines lines in your logs (i.e. `hyperdrive service logs`) are expected. We are working with the StakeWise team to improve their tooling to support our use-case more gracefully.

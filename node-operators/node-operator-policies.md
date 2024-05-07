@@ -9,7 +9,7 @@ All effectiveness checks referenced below are derived from the reports by the [r
 ### Operator Communication Channels
 
 {% hint style="warning" %}
-**NodeSet will NEVER contact you through any channel other than the above. NodeSet will NEVER send you a direct message about your node through Discord or other services.**
+**NodeSet will NEVER contact you through any channel other than the ones listed below. NodeSet will NEVER send you a direct message about your node through Discord or other services.**
 {% endhint %}
 
 * Email
