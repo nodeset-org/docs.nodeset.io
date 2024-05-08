@@ -2,7 +2,7 @@
 
 Installing Hyperdrive can be done in two ways: via the `apt` package manager for Debian-based systems, or manually via the CLI (for any Linux or macOS system).
 
-### Via the Package Manager (for Debian-based systems with `apt`)
+## Via the Package Manager (for Debian-based systems with `apt`)
 
 If your system uses the `apt` package manager, you can install Hyperdrive by enabling our repository.
 
@@ -47,7 +47,7 @@ Install Hyperdrive via `apt`:
 sudo apt update && sudo apt install hyperdrive
 ```
 
-### Manual Install (for all systems)
+## Manual Install (for all systems)
 
 If you can't or don't want to use the `apt` process, you can install Hyperdrive manually instead.
 
