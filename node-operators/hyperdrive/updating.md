@@ -19,3 +19,7 @@ hyperdrive service install -d
 ```
 
 Note the `-d` flag, which skips the installation of operating system dependencies that you should already have.
+
+### After Updating
+
+Regardless of which method you use to update, you must run `hyperdrive service config` or `hyperdrive service start` for the changes to take effect.
