@@ -17,3 +17,5 @@ Rewards for successfully replicated issues in the NodeSet Dashboard are awarded 
 <table><thead><tr><th width="121">Severity</th><th width="142">Amount (USD)</th></tr></thead><tbody><tr><td>Critical</td><td>$20,000</td></tr><tr><td>High</td><td>$10,000</td></tr><tr><td>Medium</td><td>$5,000</td></tr></tbody></table>
 
 In addition, because NodeSet currently must retain pre-signed exit messages from our Ethereum node operators, the NodeSet Dashboard has a special level of bug bounty set at $50,000 USD specifically for exploits which demonstrate full access to this data.
+
+**Note that this bug bounty is not active yet as we are still in the final development and testing phase. Please stay tuned for more information on when it goes live!**

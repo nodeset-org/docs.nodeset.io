@@ -24,6 +24,7 @@
 
 * [Introduction](stakewise-integration/introduction.md)
 * [FAQ](stakewise-integration/faq.md)
+* [Node Operator Blacklisting](stakewise-integration/node-operator-blacklisting.md)
 * [Node Operator Guide](stakewise-integration/node-operator-guide-wip.md)
 * [Security Information](stakewise-integration/security-information.md)
 
