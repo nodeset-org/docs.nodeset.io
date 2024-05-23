@@ -12,7 +12,7 @@ There are technical limitations which make it very difficult to run a fully cust
 
 ### **1. Plan your node operation**
 
-[See this page on planning your node operation.](../node-operators/best-practices/planning-your-node-architecture.md)
+[See this page on planning your node operation.](../../node-operators/best-practices/planning-your-node-architecture.md)
 
 ### 2. Install Hyperdrive
 
@@ -63,7 +63,7 @@ Ensure you store your secrets safely and regularly test your access procedures. 
 
 Once NodeSet registers your node, we will submit batches of deposit data into the vault, and ETH may be automatically deposited into these validators at any time.
 
-As always, you should [use the same best practices for maintaining your operation](../node-operators/best-practices/).
+As always, you should [use the same best practices for maintaining your operation](../../node-operators/best-practices/).
 
 {% hint style="warning" %}
 Be careful! Even if there are no validators activated when your node goes down, Ethereum never goes down, so deposits might be made to those validators even while the node is offline. If this happens, those validators will be penalized, and you may eventually be ejected from NodeSet!
@@ -73,7 +73,7 @@ If you no longer wish to participate as an operator for any of NodeSet's StakeWi
 
 ### Note regarding rewards&#x20;
 
-Because adding users to the splitter contracts and the vault is costly and NodeSet currently pays this fee, we will initially do it manually and irregularly, so there may be a delay before you begin accruing rewards. Please be patient while we work to improve and automate this flow over time. In the future, users will instead submit their own registration transactions in the future. As a reminder, you are already responsible for new validator registration -- [see here for more info](faq.md#why-do-node-operators-need-to-pay-to-register-nodes).
+Because adding users to the splitter contracts and the vault is costly and NodeSet currently pays this fee, we will initially do it manually and irregularly, so there may be a delay before you begin accruing rewards. Please be patient while we work to improve and automate this flow over time. In the future, users will instead submit their own registration transactions in the future. As a reminder, you are already responsible for new validator registration -- [see here for more info](../faq.md#why-do-node-operators-need-to-pay-to-register-nodes).
 
 Once your node is registered with the rewards splitter contract, you may claim rewards using this command:
 
