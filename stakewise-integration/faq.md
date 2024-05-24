@@ -28,4 +28,8 @@ WARNING  There are no available validators in the current deposit data to procee
 WARNING  Cannot find validator with public key 0x... in keystores.
 ```
 
+```
+WARNING  Deposit data tree root and vault's validators root don't match. Have you updated vault deposit data?
+```
+
 StakeWise's client code was not designed to be used with many decentralized operators, so these lines lines in your logs (i.e. `hyperdrive service logs`) are expected. We are working with the StakeWise team to improve their tooling to support our use-case more gracefully.
