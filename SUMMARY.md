@@ -41,4 +41,5 @@
 ## NodeSet Dashboard
 
 * [Introduction](nodeset-dashboard/introduction.md)
+* [Authorizing Your Node](nodeset-dashboard/authorizing-your-node.md)
 * [Security Information](nodeset-dashboard/security-information.md)
