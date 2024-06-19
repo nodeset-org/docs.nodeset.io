@@ -53,7 +53,7 @@ After this finishes, the status command should show your new validator public ke
 hyperdrive stakewise status
 ```
 
-Additionally, you should see those validator keys in the NodeSet dashboard at [https://staging.nodeset.io/dashboard/stakewise/validators](https://staging.nodeset.io/dashboard/stakewise/validators).
+Additionally, you should see those validator keys in the NodeSet dashboard at [https://nodeset.io/dashboard/stakewise/validators](https://nodeset.io/dashboard/stakewise/validators).
 
 ### 6. Backup your node wallet mnemonic and/or private key
 
@@ -71,7 +71,19 @@ Be careful! Even if there are no validators activated when your node goes down, 
 
 If you no longer wish to participate as an operator for any of NodeSet's StakeWise vaults, please contact us at _info@nodeset.io_. We are working on a way to exit your operation automatically through the dashboard, but this is not ready yet.
 
-### Note regarding rewards&#x20;
+## Activation
+
+
+
+## Disaster Recovery
+
+In addition to the usual steps you take to \[recover your wallet on new hardware as described here]\(), you also need to recover your StakeWise keys specifically. In the future, this will be done automatically, but currently you will need to run the following command manually to recover your StakeWise configuration:
+
+`hyperdrive stakewise wallet generate-keys --count [123]`
+
+In the above command, \[123] should be the number of keys you have already already uploaded to NodeSet, which you can view at [https://nodeset.io/dashboard/stakewise/validators](https://nodeset.io/dashboard/stakewise/validators).
+
+## Claiming Rewards&#x20;
 
 Because adding users to the splitter contracts and the vault is costly and NodeSet currently pays this fee, we will initially do it manually and irregularly, so there may be a delay before you begin accruing rewards. Please be patient while we work to improve and automate this flow over time. In the future, users will instead submit their own registration transactions in the future. As a reminder, you are already responsible for new validator registration -- [see here for more info](../faq.md#why-do-node-operators-need-to-pay-to-register-nodes).
 

@@ -18,6 +18,9 @@
   * [Installation](node-operators/hyperdrive/installation.md)
   * [Configuration](node-operators/hyperdrive/configuration.md)
   * [Updating](node-operators/hyperdrive/updating.md)
+  * [Monitoring Your Node](node-operators/hyperdrive/monitoring-your-node.md)
+  * [Uninstallation](node-operators/hyperdrive/uninstallation.md)
+  * [Disaster Recovery and Node Migration](node-operators/hyperdrive/disaster-recovery-and-node-migration.md)
 * [FAQ](node-operators/faq.md)
 
 ## StakeWise Integration
