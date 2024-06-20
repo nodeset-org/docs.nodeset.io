@@ -28,7 +28,6 @@ We recommend **at least** 0.01 ETH for each validator key you generate. For exam
 
 For Holesky, you can use one of the following faucets. Be aware we have not verified these faucets. Use them at your own risk!
 
-* [Rocket Pool Holesky faucet](https://docs.rocketpool.net/guides/testnet/overview#getting-test-eth-on-holesky)
 * [https://www.holeskyfaucet.io/](https://www.holeskyfaucet.io/https://faucet.quicknode.com/ethereum/holesky)
 * [https://holesky-faucet.pk910.de/](https://holesky-faucet.pk910.de/)
 * [https://faucet.quicknode.com/ethereum/holesky](https://www.holeskyfaucet.io/https://faucet.quicknode.com/ethereum/holesky)
