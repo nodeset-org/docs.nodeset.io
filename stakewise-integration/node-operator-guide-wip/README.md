@@ -77,7 +77,7 @@ If you no longer wish to participate as an operator for any of NodeSet's StakeWi
 
 ## Disaster Recovery
 
-In addition to the usual steps you take to \[recover your wallet on new hardware as described here]\(), you also need to recover your StakeWise keys specifically. In the future, this will be done automatically, but currently you will need to run the following command manually to recover your StakeWise configuration:
+In addition to [the usual steps you take to recover your wallet on new hardware](../../node-operators/hyperdrive/disaster-recovery-and-node-migration.md#wallet-recovery), you also need to recover your StakeWise keys specifically. In the future, this will be done automatically, but currently you will need to run the following command manually to recover your StakeWise configuration:
 
 `hyperdrive stakewise wallet generate-keys --count [123]`
 
