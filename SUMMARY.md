@@ -29,6 +29,7 @@
 * [FAQ](stakewise-integration/faq.md)
 * [Node Operator Guide](stakewise-integration/node-operator-guide-wip/README.md)
   * [Node Operator Blacklisting](stakewise-integration/node-operator-guide-wip/node-operator-blacklisting.md)
+  * [Monitoring the StakeWise Module](stakewise-integration/node-operator-guide-wip/monitoring-the-stakewise-module.md)
 * [Security Information](stakewise-integration/security-information.md)
 
 ## Constellation
