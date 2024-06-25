@@ -70,15 +70,36 @@ Be careful! Even if there are no validators activated when your node goes down, 
 
 If you no longer wish to participate as an operator for any of NodeSet's StakeWise vaults, please contact us at _info@nodeset.io_. We are working on a way to exit your operation automatically through the dashboard, but this is not ready yet.
 
-## Activation
+## Validator Lifecycle
 
+The following is StakeWise-specific. For a refresher on the Ethereum validator lifecycle, see [this page](https://www.attestant.io/posts/understanding-the-validator-lifecycle/).
 
+### Key Generation & Uploading
 
-## Exiting Validators
+1. Operators generate and upload public validator keys to NodeSet
+2. NodeSet regularly uploads these keys to partner vaults using a randomized round-robin operator selection algorithm to ensure assets are assigned equally
 
+### Deposit & Activation
 
+1.  When there is enough ETH in the vault to make a validator, the owner of the next key in line must submit a deposit transaction
+
+    &#x20;   a. If this transaction is not made within an appropriate timeframe, NodeSet will [blacklist the operator](node-operator-blacklisting.md) and create a new list of keys for the vault
+2. After this transaction occurs, the vault automatically makes a 32 ETH deposit to the Ethereum deposit contract on behalf of the supplied validator key, and the StakeWise Oracle DAO collects a pre-signed exit message using a predicted index.
+3. The validator goes through the Ethereum deposit queue and is activated as usual
+4. Once an index is assigned to the validator by Ethereum's consensus layer, Hyperdrive automatically sends a pre-signed exit message to NodeSet for safety.
+
+### Exiting
+
+1. If the validator's performance is below the requirements of [NodeSet's Operator Policies](../../node-operators/node-operator-policies.md), NodeSet will exit the validator using the exit message on hand.
+2. Otherwise, the validator will remain online until:
+   1. The operator exits the validator using the `hyperdrive stakewise validator exit` command
+   2. There is not enough liquidity in the vault for liquid stakers wishing to redeem their staked ETH, so the StakeWise Oracle DAO will exit validators as necessary using its copy of the signed exit message
 
 ## Disaster Recovery
+
+{% hint style="info" %}
+Operators do NOT need to exit StakeWise validators to migrate or recover their nodes! As long as you still have your wallet mnemonic, you can recover your StakeWise validator keys.
+{% endhint %}
 
 In addition to [the usual steps you take to recover your wallet on new hardware](../../node-operators/hyperdrive/disaster-recovery-and-node-migration.md#wallet-recovery), you also need to recover your StakeWise keys specifically. In the future, this will be done automatically, but currently you will need to run the following command manually to recover your StakeWise configuration:
 
@@ -88,10 +109,12 @@ In the above command, \[123] should be the number of keys you have already alrea
 
 ## Claiming Rewards&#x20;
 
-Because adding users to the splitter contracts and the vault is costly and NodeSet currently pays this fee, we will initially do it manually and irregularly, so there may be a delay before you begin accruing rewards. Please be patient while we work to improve and automate this flow over time. In the future, users will instead submit their own registration transactions in the future. As a reminder, you are already responsible for new validator registration -- [see here for more info](../faq.md#why-do-node-operators-need-to-pay-to-register-nodes).
-
 Once your node is registered with the rewards splitter contract, you may claim rewards using this command:
 
 ```bash
 hyperdrive stakewise wallet claim-rewards
 ```
+
+{% hint style="info" %}
+Because adding users to the splitter contracts and the vault is costly and NodeSet currently pays this fee, we will initially do it manually and irregularly, so there may be a delay before you begin accruing rewards. Please be patient while we work to improve and automate this flow over time. In the future, users will instead submit their own registration transactions in the future. As a reminder, you are already responsible for new validator registration -- [see here for more info](../faq.md#why-do-node-operators-need-to-pay-to-register-nodes).
+{% endhint %}

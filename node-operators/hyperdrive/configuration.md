@@ -34,7 +34,7 @@ Hyperdrive is a modular system with support for running several services side-by
 
 #### Monitoring / Metrics
 
-With grafana and prometheus built into Hyperdrive, users can monitor their nodes externally.&#x20;
+With Grafana and Prometheus built into Hyperdrive, users can monitor their nodes externally.&#x20;
 
 #### Hyperdrive and TX Fees
 
