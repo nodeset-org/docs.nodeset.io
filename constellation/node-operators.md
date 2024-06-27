@@ -18,5 +18,14 @@ However, to fuel the continual creation of new validators in a non-custodial man
 
 NOs always have an incentive to run as many minipools as allowed by Constellation because they are paid for each minipool they run.
 
-### Node Operator Rewards
+### Rewards
 
+{% hint style="info" %}
+&#x20;See [the xrETH documentation](xreth.md#no-staking-fees) for the liquid staker perspective
+{% endhint %}
+
+Node operators who supply infrastructure for Constellation receive rewards from the protocol which is equal to 50% of the difference between Rocket Pool's enhanced node earnings and the typical Ethereum staking rewards:
+
+`0.5 * rETH commission * ETH staking yield * 3` per ETH per year
+
+For example, with an ETH staking reward rate of 4% and an rETH commission of 14%, Constellation operators earn 0.0672 ETH per LEB8 minipool per year.
