@@ -17,3 +17,6 @@ However, to fuel the continual creation of new validators in a non-custodial man
 5. This process can be repeated to make as many minipools as allowed by the protocol.
 
 NOs always have an incentive to run as many minipools as allowed by Constellation because they are paid for each minipool they run.
+
+### Node Operator Rewards
+
