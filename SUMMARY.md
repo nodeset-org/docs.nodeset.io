@@ -14,6 +14,7 @@
 * [Client Diversity Policy](node-operators/client-diversity-policy.md)
 * [Best Practices](node-operators/best-practices/README.md)
   * [Planning Your Node Architecture](node-operators/best-practices/planning-your-node-architecture.md)
+  * [MEV Boost](node-operators/best-practices/mev-boost.md)
 * [Hyperdrive](node-operators/hyperdrive/README.md)
   * [Installation](node-operators/hyperdrive/installation.md)
   * [Configuration](node-operators/hyperdrive/configuration.md)

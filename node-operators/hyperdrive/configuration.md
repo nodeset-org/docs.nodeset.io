@@ -10,7 +10,7 @@ hyperdrive service config
 
 The configuration wizard is automatically opened on first-time configuration, and it may be again accessed later with the button at the bottom of the TUI.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Client Mode
 
@@ -34,7 +34,7 @@ Hyperdrive is a modular system with support for running several services side-by
 
 #### Monitoring / Metrics
 
-With Grafana and Prometheus built into Hyperdrive, users can monitor their nodes externally.&#x20;
+With [Grafana](https://grafana.com/) and [Prometheus](https://prometheus.io/) built into Hyperdrive, users can monitor their nodes externally. NodeSet is developing a default dashboard to help operators monitor their node, but users must supply their own for now. For more information, see the documentation for [Grafana](https://grafana.com/docs/grafana/latest/), [Prometheus](https://prometheus.io/docs/introduction/overview/), and the [Rocket Pool monitoring guide](https://docs.rocketpool.net/guides/node/maintenance/overview).
 
 #### Hyperdrive and TX Fees
 
