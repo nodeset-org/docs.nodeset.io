@@ -70,6 +70,10 @@ Be careful! Even if there are no validators activated when your node goes down, 
 
 If you no longer wish to participate as an operator for any of NodeSet's StakeWise vaults, please contact us at _info@nodeset.io_. We are working on a way to exit your operation automatically through the dashboard, but this is not ready yet.
 
+## Claiming Rewards
+
+If your withdrawal address is a hot wallet, then you can simply connect that wallet to the appropriate splitter address for the vault on app.splits.org. If your node wallet is the withdrawal address, you can use `hyperdrive stakewise wallet claim-rewards`
+
 ## Validator Lifecycle
 
 The following is StakeWise-specific. For a refresher on the Ethereum validator lifecycle, see [this page](https://www.attestant.io/posts/understanding-the-validator-lifecycle/).
