@@ -38,9 +38,9 @@ Constellation reserves an operational fee equal to:
 
 `rETH commission * ETH staking yield * 3`
 
-Therefore, the xrETH rewards are equal to the typical ETH staking yield.
+Therefore, **xrETH rewards are equal to the typical ETH staking yield**.
 
-For example, if the rETH commission is 14% and the ETH staking yield is 4%, typical RP operators would receive 0.0568 ETH per year per ETH bonded (with an LEB8), and xrETH holders would receive 0.04 ETH per year per ETH deposited. The difference is taken to pay for Constellation protocol operations and is split between the [Administrator](administrator.md) and [Node Operators](node-operators.md).
+For example, if the rETH commission is 14% and the ETH staking yield is 4%, typical RP operators would receive 0.0568 ETH per year per ETH bonded (with an LEB8), and xrETH holders would receive 0.04 ETH per year per ETH deposited, but with no RPL exposure necessary. The difference is taken to pay for Constellation protocol operations and is split between the [Administrator](administrator.md) and [Node Operators](node-operators.md).
 
 {% hint style="info" %}
 Note that it is always more profitable to run a Rocket Pool node with your assets instead of minting xrETH or xRPL. If you are technically capable, please support the network and community by running a Rocket Pool node (and [join NodeSet](https://nodeset.io/join) to earn even more)!
