@@ -36,7 +36,7 @@ For Holesky, you can use one of the following faucets. Be aware we have not veri
 
 a) Go to [https://nodeset.io/dashboard](https://nodeset.io/dashboard) (beta testers should use [https://staging.nodeset.io/dashboard](https://staging.nodeset.io/dashboard)) to create or login to your NodeSet account. Users who have gone through the onboarding process will automatically be given the permission to access the StakeWise portion of the dashboard.
 
-b) Use the dashboard to add your new node address ([https://staging.nodeset.io/dashboard/stakewise/authorized-addresses](https://staging.nodeset.io/dashboard/stakewise/authorized-addresses))
+b) Use the dashboard to add your new node address ([https://nodeset.io/dashboard/stakewise/authorized-addresses](https://nodeset.io/dashboard/stakewise/authorized-addresses))
 
 ### 5. Generate validator keys
 
