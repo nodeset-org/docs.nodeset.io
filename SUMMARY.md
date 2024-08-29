@@ -41,6 +41,7 @@
 * [xRPL](constellation/xrpl.md)
 * [Node Operators](constellation/node-operators.md)
 * [Administrator](constellation/administrator.md)
+* [Treasurer](constellation/treasurer.md)
 * [FAQ](constellation/faq.md)
 * [Security Information](constellation/security-information.md)
 
