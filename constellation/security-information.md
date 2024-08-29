@@ -6,7 +6,7 @@ If you wish to report any security-related issues, please email us directly at *
 
 ### Audits
 
-Constellation will be audited by leading independent security professionals. When these reports are available, they will be released publicly here.
+Constellation is being audited by leading independent security professionals. When these reports are available, they will be released publicly here.
 
 ### Bug Bounties
 

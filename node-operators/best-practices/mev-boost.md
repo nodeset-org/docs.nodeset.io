@@ -10,4 +10,4 @@ Although NodeSet highly recommends the usage of at least one relay (and ideally,
 
 Hyperdrive includes some relays built-in, but users may also add custom relays using the [configuration TUI](../hyperdrive/configuration.md). For a full list of existing MEV relays, their URLs, and their properties, see [the ETHStaker documentation](https://github.com/eth-educators/ethstaker-guides/blob/main/MEV-relay-list.md).
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Hyperdrive's MEV-Boost Settings Menu</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Hyperdrive's MEV-Boost Settings Menu</p></figcaption></figure>

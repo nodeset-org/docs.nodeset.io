@@ -10,7 +10,7 @@ hyperdrive service config
 
 The configuration wizard is automatically opened on first-time configuration, and it may be again accessed later with the button at the bottom of the TUI.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Client Mode
 
