@@ -22,7 +22,7 @@ Constellation liquidizes the NO bond, opening it up to external investors via to
 There are four main user roles in this system:
 
 1\) Depositors ([xrETH](xreth.md) or [xRPL](xrpl.md) holders)\
-2\) [Node operators](administrator.md)\
+2\) [Node operators](node-operators.md)\
 3\) [Administrator](administrator.md)\
 4\) [Treasurer](treasurer.md)
 
