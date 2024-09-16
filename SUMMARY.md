@@ -5,6 +5,7 @@
 ## NodeSet
 
 * [Introduction](nodeset/introduction.md)
+* [Infrastructure Powered by NodeSet](nodeset/infrastructure-powered-by-nodeset.md)
 * [Security Notice](nodeset/security-notice.md)
 
 ## Node Operators
