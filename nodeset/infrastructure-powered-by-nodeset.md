@@ -6,7 +6,7 @@ description: >-
 
 # Infrastructure Powered by NodeSet
 
-NodeSet's decentralized infrastructure network powers several products, and many more are planned. If you are interested in using NodeSet to ensure the resilience and integrity of your next project, please get in touch!
+NodeSet's decentralized infrastructure network powers several products, and many more are planned. If you are interested in using NodeSet to ensure the resilience and integrity of your project, please get in touch!
 
 
 
