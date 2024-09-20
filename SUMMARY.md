@@ -42,6 +42,8 @@
 * [xrETH](constellation/xreth.md)
 * [xRPL](constellation/xrpl.md)
 * [Node Operators](constellation/node-operators.md)
+* [Node Operator Guide](constellation/node-operator-guide/README.md)
+  * [Guide Page 1](constellation/node-operator-guide/guide-page-1.md)
 * [Administrator](constellation/administrator.md)
 * [Treasurer](constellation/treasurer.md)
 * [FAQ](constellation/faq.md)
