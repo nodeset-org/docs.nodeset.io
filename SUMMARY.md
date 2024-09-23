@@ -24,6 +24,7 @@
   * [Monitoring Your Node](node-operators/hyperdrive/monitoring-your-node.md)
   * [Uninstallation](node-operators/hyperdrive/uninstallation.md)
   * [Disaster Recovery and Node Migration](node-operators/hyperdrive/disaster-recovery-and-node-migration.md)
+  * [Public Betas](node-operators/hyperdrive/public-betas.md)
 * [FAQ](node-operators/faq.md)
 
 ## StakeWise Integration
@@ -43,7 +44,10 @@
 * [xRPL](constellation/xrpl.md)
 * [Node Operators](constellation/node-operators.md)
 * [Node Operator Guide](constellation/node-operator-guide/README.md)
-  * [Guide Page 1](constellation/node-operator-guide/guide-page-1.md)
+  * [Overview](constellation/node-operator-guide/overview.md)
+  * [Prerequisites](constellation/node-operator-guide/prerequisites.md)
+  * [Registering your Node with Constellation](constellation/node-operator-guide/registering-your-node-with-constellation.md)
+  * [Creating and Running Minipools](constellation/node-operator-guide/creating-and-running-minipools.md)
 * [Administrator](constellation/administrator.md)
 * [Treasurer](constellation/treasurer.md)
 * [FAQ](constellation/faq.md)
