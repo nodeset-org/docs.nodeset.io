@@ -38,9 +38,59 @@ Wallet recovery is the process for restoring a node from an offline seed phrase 
 To minimize downtime, you should initiate a wallet recovery on new hardware **as soon as you realize the old filesystem is not recoverable.**
 {% endhint %}
 
-First, [install Hyperdrive as usual](installation.md) on your new node.&#x20;
+First, [install Hyperdrive as usual](installation.md) on your new node. When Hyperdrive asks you to create a wallet, reply `n`. This will save you the step of creating and validating a new mnemonic which won't be used. 
 
 Next, use the `hyperdrive wallet recover` command to regenerate your node wallet based on your seed phrase backup. From here, you should review your configuration with `hyperdrive service config` and [monitor the node as usual](monitoring-your-node.md) to ensure it is operational.
+
+### Recovering the StakeWise Module
+
+After you've recovered your wallet, you can enable the StakeWise module in the Hyperdrive Configuration terminal `hyperdrive service config` -> Modules menu.
+
+After exiting the configuration terminal, Hyperdrive asks you to verify you don't have any running validators, and a final verification that if you did have validators running, you've waited 15 minutes, because Hyperdrive can't determine if you attested in the last 15 minutes. Because you're about to regenerate the same keys, ensure that the node you're recovering hasn't attested in the last 15 minutes.
+
+After you've enabled the StakeWise module, you need to regenerate your validator keys. The reason for this is that the new Hyperdrive installation currently has no way of knowing how many keys were generated before. Regenerate the same number of keys with `hyperdrive stakewise wallet generate -c X` where `X` is the number of keys to generate. The alias version of this command is `hyperdrive sw w g -c X`.
+
+Hyperdrive will ask if you want to continue uploading your deposit data. Even though it's already been uploaded, it's safe to do this, as Hyperdrive will detect they've already been uploaded, and report back the status.
+
+```
+NOTE: There is currently no way to remove a validator's deposit data from the NodeSet service once you've uploaded it. The key will be eligible for activation at any time, so this node must remain online at all times to handle activation and validation duties.
+If you turn the node off, you may be removed from NodeSet for negligence of duty!
+
+Do you want to continue uploading your deposit data? [y/n]
+y
+
+Uploading deposit data to the NodeSet server...
+All of your validator keys are already registered (10 in total).
+7 are pending activation.
+3 have been activated already.
+```
+
+### Recovering the Constellation Module
+
+After you've recovered your wallet, you can enable the Constellation module in the Hyperdrive Configuration terminal `hyperdrive service config` -> Modules menu.
+
+After exiting the configuration terminal, Hyperdrive asks you to verify you don't have any running validators, and a final verification that if you did have validators running, you've waited 15 minutes, because Hyperdrive can't determine if you attested in the last 15 minutes. Because you're about to regenerate the same keys, ensure that the node you're recovering hasn't attested in the last 15 minutes.
+
+After you've enabled the Constellation module, you need to rebuild your validator keys. The Constellation module searches for activated keys from the Constellation wallet derivation path, by default from index 0 to index 500. You can rebuild your validator keys with `hyperdrive constellation wallet rebuild`. The alias version of this command is `hyperdrive cs w b`.
+
+```
+The following keys will be rebuilt:
+        Minipool: 0xeDa3C8D065B97609Be536bF54fEC757D11D79CD5
+        Validator: 0x992b0131967c3bd4e840075e2189c7a6836c5b858ee964e4fdd05a1d3230d9668259fdb3651b5ef63bad06e17b37b330
+        Index: 1814204
+
+Are you ready to rebuild these keys? [y/n]
+y
+
+Rebuilding 0x992b0131967c3bd4e840075e2189c7a6836c5b858ee964e4fdd05a1d3230d9668259fdb3651b5ef63bad06e17b37b330... done! (2.228147452s)
+1 keys have been rebuilt.
+
+Your Constellation Validator Client must be restarted in order to load the validator keys and resume attesting wth them.
+Would you like to restart the Constellation Validator Client now? [y/n]
+y
+
+Successfully restarted the Constellation Validator Client. Your rebuilt validator keys are now loaded.
+```
 
 ## Lost Seed Phrase
 
