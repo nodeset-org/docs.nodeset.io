@@ -47,6 +47,13 @@ If you'd like to target a specific version (e.g., v1.1.0 Beta 1) instead of usin
 sudo apt install hyperdrive=1.1.0~b1
 ```
 
+After installing a new version, you must edit the configurtation of hyperdrive, review the changes and save it by running:
+
+```
+hyperdrive service config
+```
+Then `Review changes and Save`.
+
 ## Manual Install (for All Systems) <a href="#manual-install-for-all-systems" id="manual-install-for-all-systems"></a>
 
 If your system doesn't use `apt` or if you prefer to install beta versions manually, follow the same installation instructions as [the stable release guide](installation.md#manual-install-for-all-systems). The only difference is that instead of using a release version, you can use the GitHub prerelease page for your release of choice.&#x20;
