@@ -46,11 +46,7 @@ Next, use the `hyperdrive wallet recover` command to regenerate your node wallet
 
 After you've recovered your wallet, you can enable the StakeWise module in the Hyperdrive Configuration terminal `hyperdrive service config` -> Modules menu.
 
-After exiting the configuration terminal, Hyperdrive asks you to verify you don't have any running validators, and a final verification that if you did have validators running, you've waited 15 minutes, because Hyperdrive can't determine if you attested in the last 15 minutes. Because you're about to regenerate the same keys, ensure that the node you're recovering hasn't attested in the last 15 minutes.
-
-After you've enabled the StakeWise module, you need to regenerate your validator keys. The reason for this is that the new Hyperdrive installation currently has no way of knowing how many keys were generated before. Regenerate the same number of keys with `hyperdrive stakewise wallet generate -c X` where `X` is the number of keys to generate. The alias version of this command is `hyperdrive sw w g -c X`.
-
-Hyperdrive will ask if you want to continue uploading your deposit data. Even though it's already been uploaded, it's safe to do this, as Hyperdrive will detect they've already been uploaded, and report back the status.
+After exiting the configuration terminal, Hyperdrive asks you to verify you don't have any running validators, and a final verification that if you did have validators running, you've waited 15 minutes, because Hyperdrive can't determine if you attested in the last 15 minutes. Because you're about to regenerate the same keys, this will apply to you, and **you MUST ensure that the node you're recovering hasn't attested in the last 15 minutes or you may be slashed!**
 
 ```
 NOTE: There is currently no way to remove a validator's deposit data from the NodeSet service once you've uploaded it. The key will be eligible for activation at any time, so this node must remain online at all times to handle activation and validation duties.
@@ -65,13 +61,15 @@ All of your validator keys are already registered (10 in total).
 3 have been activated already.
 ```
 
+After you've enabled the StakeWise module, you need to regenerate your validator keys. The reason for this is that the new Hyperdrive installation currently has no way of knowing how many keys were generated before. Regenerate the same number of keys with `hyperdrive stakewise wallet generate -c X` where `X` is the number of keys to generate. The alias version of this command is `hyperdrive sw w g -c X`.
+
+Hyperdrive will ask if you want to continue uploading your deposit data. Even though it's already been uploaded, it's safe to do this, as Hyperdrive will detect they've already been uploaded, and report back the status.
+
 ### Recovering the Constellation Module
 
 After you've recovered your wallet, you can enable the Constellation module in the Hyperdrive Configuration terminal `hyperdrive service config` -> Modules menu.
 
-After exiting the configuration terminal, Hyperdrive asks you to verify you don't have any running validators, and a final verification that if you did have validators running, you've waited 15 minutes, because Hyperdrive can't determine if you attested in the last 15 minutes. Because you're about to regenerate the same keys, ensure that the node you're recovering hasn't attested in the last 15 minutes.
-
-After you've enabled the Constellation module, you need to rebuild your validator keys. The Constellation module searches for activated keys from the Constellation wallet derivation path, by default from index 0 to index 500. You can rebuild your validator keys with `hyperdrive constellation wallet rebuild`. The alias version of this command is `hyperdrive cs w b`.
+After exiting the configuration terminal, Hyperdrive asks you to verify you don't have any running validators, and a final verification that if you did have validators running, you've waited 15 minutes, because Hyperdrive can't determine if you attested in the last 15 minutes. Because you're about to regenerate the same keys, this will apply to you, and **you MUST ensure that the node you're recovering hasn't attested in the last 15 minutes or you may be slashed!**
 
 ```
 The following keys will be rebuilt:
@@ -91,6 +89,8 @@ y
 
 Successfully restarted the Constellation Validator Client. Your rebuilt validator keys are now loaded.
 ```
+
+After you've enabled the Constellation module, you need to rebuild your validator keys. The Constellation module searches for activated keys from the Constellation wallet derivation path, by default from index 0 to index 500. You can rebuild your validator keys with `hyperdrive constellation wallet rebuild`. The alias version of this command is `hyperdrive cs w b`.
 
 ## Lost Seed Phrase
 
