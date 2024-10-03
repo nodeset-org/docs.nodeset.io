@@ -28,9 +28,9 @@ We recommend **at least** 0.01 ETH for each validator key you generate. For exam
 
 For Holesky, you can use one of the following faucets. Be aware we have not verified these faucets. Use them at your own risk!
 
-* [https://www.holeskyfaucet.io/](https://www.holeskyfaucet.io/https://faucet.quicknode.com/ethereum/holesky)
+* [https://www.holeskyfaucet.io/](https://www.holeskyfaucet.io/)
 * [https://holesky-faucet.pk910.de/](https://holesky-faucet.pk910.de/)
-* [https://faucet.quicknode.com/ethereum/holesky](https://www.holeskyfaucet.io/https://faucet.quicknode.com/ethereum/holesky)
+* [https://faucet.quicknode.com/ethereum/holesky](https://faucet.quicknode.com/ethereum/holesky)
 
 ### 4. Add your node address to your NodeSet account
 
