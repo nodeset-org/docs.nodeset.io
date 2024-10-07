@@ -16,6 +16,6 @@ If you notice an opportunity for improvement with with any of our technical impl
 
 ## TESTNET
 
-### Is there a minimum amount of time that we need to have a validator up on testnet?
+### How long do operators need to have a validator active on testnet before gaining access to mainnet?
 
-You can shut it down relatively quickly if you so desire. We do want to test some additional functionality with the community (e.g., increasing the validator target), but we don't need everyone to do so.
+There is no minimum time. You can exit it immediately and still have access to mainnet. However, we always recommend keeping a test environment online if possible so you can test changes to your configuration, new Hyperdrive versions, etc.
