@@ -34,9 +34,9 @@ For Holesky, you can use one of the following faucets. Be aware we have not veri
 
 ### 4. Add your node address to your NodeSet account
 
-a) Go to [https://nodeset.io/dashboard](https://nodeset.io/dashboard) (beta testers should use [https://staging.nodeset.io/dashboard](https://staging.nodeset.io/dashboard)) to create or login to your NodeSet account. Users who have gone through the onboarding process will automatically be given the permission to access the StakeWise portion of the dashboard.
+a) Go to [https://nodeset.io/dashboard](https://nodeset.io/dashboard) to create or login to your NodeSet account. Users who have gone through the onboarding process will automatically be given the permission to access the StakeWise portion of the dashboard.
 
-b) Use the dashboard to add your new node address ([https://nodeset.io/dashboard/stakewise/authorized-addresses](https://nodeset.io/dashboard/stakewise/authorized-addresses))
+b) Use the dashboard to [add your new node address](../../nodeset-dashboard/authorizing-your-node.md).
 
 ### 5. Generate validator keys
 
@@ -83,7 +83,7 @@ The following is StakeWise-specific. For a refresher on the Ethereum validator l
 
 1.  When there is enough ETH in the vault to make a validator, the owner of the next key in line must submit a deposit transaction
 
-    &#x20;   a. If this transaction is not made within an appropriate timeframe, NodeSet will [blacklist the operator](node-operator-blacklisting.md) and create a new list of keys for the vault
+    a. If this transaction is not made within an appropriate timeframe, NodeSet will [blacklist the operator](node-operator-blacklisting.md) and create a new list of keys for the vault
 2. After this transaction occurs, the vault automatically makes a 32 ETH deposit to the Ethereum deposit contract on behalf of the supplied validator key, and the StakeWise Oracle DAO collects a pre-signed exit message using a predicted index.
 3. The validator goes through the Ethereum deposit queue and is activated as usual
 4. Once an index is assigned to the validator by Ethereum's consensus layer, Hyperdrive automatically sends a pre-signed exit message to NodeSet for safety.
@@ -107,7 +107,7 @@ In addition to [the usual steps you take to recover your wallet on new hardware]
 
 In the above command, \[123] should be the number of keys you have already already uploaded to NodeSet, which you can view at [https://nodeset.io/dashboard/stakewise/validators](https://nodeset.io/dashboard/stakewise/validators).
 
-## Claiming Rewards&#x20;
+## Claiming Rewards
 
 Once your node is registered with the rewards splitter contract, you may claim rewards using this command:
 
