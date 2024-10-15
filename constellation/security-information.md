@@ -6,7 +6,7 @@ If you wish to report any security-related issues, please email us directly at *
 
 ### Audits
 
-Constellation is being audited by leading independent security professionals. When these reports are available, they will be released publicly here.
+Constellation was audited for three months by three teams of leading independent security professionals. To read the full reports, please see [the Constellation repository's `audits` directory](https://github.com/nodeset-org/constellation/tree/main/audits).
 
 ### Bug Bounties
 
