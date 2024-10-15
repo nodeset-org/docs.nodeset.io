@@ -42,6 +42,7 @@
 * [Overview](constellation/introduction.md)
 * [xrETH](constellation/xreth.md)
 * [xRPL](constellation/xrpl.md)
+* [Risks and Mitigations](constellation/risks-and-mitigations.md)
 * [Node Operators](constellation/node-operators.md)
 * [Node Operator Guide](constellation/node-operator-guide/README.md)
   * [Overview](constellation/node-operator-guide/overview.md)

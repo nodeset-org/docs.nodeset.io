@@ -14,13 +14,7 @@ Functionally, xrETH is very similar to [rETH](https://docs.rocketpool.net/guides
 
 #### Value Accrual Design (not rebasing)
 
-Also like rETH, xrETH uses the [cToken model made famous by Compound](https://docs.compound.finance/v2/ctokens/) where the protocol's  exchange rate for xrETH will rise over time with the value of earned rewards. This model is more gas efficient than a rebasing token, and it also may offer tax advantages to users in certain jurisdictions.
-
-#### **Exposure to Slashing**
-
-xrETH has no built-in slashing protection. However, xrETH is staked across hundreds of independent operators individually vetted by NodeSet, and accordingly, asset exposure risk for the failure of any individual operator is minimal. To date, no NodeSet operator has been slashed, and performance for the NodeSet network remains comparable with professional operators.
-
-If you prefer to exchange some yield for additional slashing protection, you may consider [using a StakeWise vault operated by NodeSet's operators](broken-reference) or [using rETH instead](https://stake.rocketpool.net/).
+Also like rETH, xrETH uses the [cToken model made famous by Compound](https://docs.compound.finance/v2/ctokens/), where the protocol's  exchange rate for xrETH adjusts over time with the value of earned rewards. This model is more gas efficient than a rebasing token, and it also may offer tax advantages to users in certain jurisdictions.
 
 ### No Staking Fees
 
