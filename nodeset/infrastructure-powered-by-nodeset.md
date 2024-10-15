@@ -6,7 +6,11 @@ description: >-
 
 # Infrastructure Powered by NodeSet
 
-NodeSet's decentralized network powers several products, and many more are planned. If you are interested in using NodeSet to ensure the resilience and integrity of your infrastructure, please get in touch!
+{% hint style="info" %}
+All NodeSet infrastructure services are non-custodial!
+{% endhint %}
+
+The NodeSet network powers several products, and many more are planned. If you are interested in using NodeSet to ensure the resilience and integrity of your infrastructure, please get in touch!
 
 
 

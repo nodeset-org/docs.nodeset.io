@@ -4,7 +4,7 @@ description: Understand the mechanisms designed to keep assets in Constellation 
 
 # Risks and Mitigations
 
-### **Timelocks**&#x20;
+### **Timelocks and Admin Risk**&#x20;
 
 While some administration tasks in Constellation are relatively safe, such as changing the maximum number of validators each node operator is allowed, there are other parameter adjustments that will immediately affect users returns or represent critical security concerns. For these settings, Constellation uses [standard timelock contracts](https://docs.openzeppelin.com/contracts/4.x/api/governance#TimelockController) to give users time to exit the system before potentially dangerous maintenance occurs.&#x20;
 
@@ -16,9 +16,9 @@ The timelocks are set to small values during Constellation's initial deployment 
 
 <table><thead><tr><th width="112">Name</th><th width="162">Current Length</th><th>Affected Parameters</th></tr></thead><tbody><tr><td>Short</td><td>1 block</td><td>ETH/RPL system ratios, liquidity reserve requirements, NO temporary bond value, operator removal</td></tr><tr><td>Medium</td><td>2 blocks</td><td>Treasury fees, NO fees, mint fee</td></tr><tr><td>Long</td><td>3 blocks</td><td>Contract upgrades</td></tr></tbody></table>
 
-### Active Node Operator Management
+### Downtime Risk
 
-As a NodeSet-developed system, Constellation is built with a distributed operator set in mind
+Because NodeSet uses a distributed infrastructure model, node operators are allowed nearly full independence of their operation. This means that they may experience downtime which would allow performance to trend towards the Ethereum network average. However, NodeSet monitors network performance to ensure that downtime is reasonable. If operators experience too much downtime, their validators will be exited and they will no longer be allowed to participate.
 
 ### **Slashing Risk**
 
