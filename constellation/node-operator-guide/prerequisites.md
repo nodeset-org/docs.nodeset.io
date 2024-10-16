@@ -15,7 +15,7 @@ To become a Constellation node operator, you will need the following:
 
 The process for preparing a node in terms of security posture and Operating System provisioning is currently beyond the scope of this limited documentation; it assumes you already have a node running, or able to run. For details on preparing a node from scratch, we recommend [the comprehensive documentation provided by Rocket Pool](https://docs.rocketpool.net/guides/node/local/overview).
 
-When your node is prepared, ensure you have Hyperdrive installed prior to following the rest of this guide. As Constellation is currently only available in the public beta release of Hyperdrive, you will need to follow [the Public Betas guide](../../node-operators/hyperdrive/public-betas.md) to install a prerelease version.
+When your node is prepared, [ensure you have Hyperdrive installed](../../node-operators/hyperdrive/installation.md) prior to following the rest of this guide.
 
 ### Important Note about Node Selection
 

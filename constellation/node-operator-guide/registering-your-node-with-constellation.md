@@ -1,10 +1,10 @@
 # Registering your Node with Constellation
 
-Before beginning, you will need to install the latest beta version of Hyperdrive. Please follow [the Public Beta guide](../../node-operators/hyperdrive/public-betas.md) to install and configure the latest beta release (currently **v1.1.0 Beta 1** ) before proceeding, or the following instructions will not work.
+Before beginning, you will need to install Hyperdrive v1.1.0 or greater. Please [follow the installation guide](../../node-operators/hyperdrive/installation.md) to install and configure the latest release before proceeding, or the following instructions will not work.
 
 ### Enabling Constellation
 
-With Hyperdrive v1.1.0-b1 or higher installed, start by enabling the Constellation module:
+With Hyperdrive v1.1.0 or higher installed, start by enabling the Constellation module:
 
 1. Run `hyperdrive service config` to configure the service.
 2. Navigate to the `Modules` menu.
