@@ -28,3 +28,12 @@ There is a whole category of attacks against Constellation by the administrator 
 * Rate-limits may be applied to the removal of NOs so that the administrator can’t take over the network without depositors leaving first
 
 However, there are some centralization risks inherent in the initial design of Constellation. There is no way to prevent the admin or other trusted roles from doing Bad Things. Instead, users are encouraged to be cautious and monitor the system to ensure they exit before changes they disagree with go into effect.
+
+## When does NodeSet adjust the `maxValidator` count for operators on the Gravita Constellation instance?
+
+NodeSet has a dual mandate from Gravita for their instance of Constellation:&#x20;
+
+1\) To ensure Constellation assets are as safe as possible (i.e. distribution) \
+2\) To ensure Constellation assets are as productive as possible (i.e. utilization)
+
+The balance between these two is not easy and relies on predictive judgement, but Gravita trusts NodeSet's expertise to interpret the data to provide the best balance we can. We closely monitor the distribution vs utilization dynamic, so while we can't provide a detailed plan of action, we will react when necessary to keep assets as safe and productive as possible.
