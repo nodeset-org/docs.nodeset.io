@@ -18,6 +18,8 @@ Decentralized and distributed node operators are the fundamental force which ens
 
 NodeSet is a **managed-distributed infrastructure aggregator**. This unique approach merges the effective resilience of decentralization with the quality and support of centralization.&#x20;
 
+All NodeSet infrastructure services are non-custodial! This means that neither NodeSet nor participating operators have access to assets, and all assets remain under the custody of users.
+
 
 
 | Type                             | Philosophy                                                                                                                     | Example     |
