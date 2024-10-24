@@ -10,15 +10,11 @@ description: Understand the differences in risks, returns, and responsibilities
 
 ## Constellation vs Running a Node
 
-Most xrETH depositors can expect similar returns and lower risks compared to running a basic Ethereum node (AKA "solo staking") on your own. In addition, xrETH is a liquid token, which allows for its usage in DeFi, boosting its potential even further.
+Most xrETH depositors can expect similar returns and lower risks compared to running a basic Ethereum node (AKA "solo staking") on your own. In addition, xrETH is a liquid token, which allows for its usage in DeFi, boosting its potential even further.&#x20;
 
-When comparing against a system like Rocket Pool or Lido CSM, however, the comparison becomes more complex.
+When comparing to other node operation options, the landscape is more complex. Generally speaking, using xrETH as a Constellation Node Operator allows for improved returns and full liquidity, and other solutions are available for users wishing to purely maximize returns even at the cost of liquidity or utility.
 
-| Method | Pros | Cons |
-| ------ | ---- | ---- |
-| xrETH  |      |      |
-|        |      |      |
-|        |      |      |
+<table><thead><tr><th>Method</th><th width="186">Estimated Returns*</th><th width="179">Pros</th><th>Cons</th></tr></thead><tbody><tr><td>xrETH</td><td>100% of solo staking</td><td>Usable in DeFi, which may boost returns dramatically</td><td>See <a href="risks-and-mitigations.md">Risks and Mitigations</a></td></tr><tr><td>xrETH + Constellation Node Operation</td><td>121% of solo staking</td><td>Usable in DeFi, which may boost returns dramatically</td><td>See <a href="risks-and-mitigations.md">Risks and Mitigations</a></td></tr><tr><td>Solo staking</td><td>100% of solo staking</td><td>No SC risk</td><td>Fully locked, must run a node, risk and returns dependent upon individual performance</td></tr><tr><td>Rocket Pool (LEB8)</td><td>ETH: 142% of solo staking<br>RPL: ~9% APR</td><td>Highest returns</td><td>Fully locked, must run a node, risk and returns dependent upon individual performance</td></tr><tr><td><p>Rocket Pool </p><p>(ETH-only LEB8)</p></td><td>110%-114% of solo staking</td><td>Higher returns than solo staking</td><td>Fully locked, must run a node, risk and returns dependent upon individual performance</td></tr><tr><td>Lido CSM</td><td>237% of solo staking</td><td>Higher returns than solo staking</td><td>Fully locked, must run a node, risk and returns dependent upon individual performance<br><br>Limited to 16 ETH</td></tr></tbody></table>
 
 
 
