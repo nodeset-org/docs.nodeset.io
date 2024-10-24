@@ -26,4 +26,4 @@ Because NodeSet uses a distributed infrastructure model, node operators are allo
 
 xrETH is not inherently protected against slashing. However, xrETH is staked across hundreds of independent operators individually vetted by NodeSet, and accordingly, asset exposure risk for the failure of any individual operator is minimal. To date, no NodeSet operator has been slashed, and performance for the NodeSet network remains comparable with professional operators.
 
-If you prefer to exchange some yield for additional slashing protection, you may consider [using a StakeWise vault operated by NodeSet's operators](broken-reference) instead.
+If you prefer to exchange some yield for additional slashing protection, you may consider minting osETH from[ a StakeWise vault operated by NodeSet's operators](broken-reference) instead.
