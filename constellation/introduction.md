@@ -28,6 +28,6 @@ There are four main user roles in this system:
 
 ## Current status <a href="#d4ac" id="d4ac"></a>
 
-NodeSet has created a testnet deployment of Constellation on Holesky. The Directory contract is located at this addres: [0x925D0700407fB0C855Ae9903B3a2727F1e88576c](https://holesky.etherscan.io/address/0x925D0700407fB0C855Ae9903B3a2727F1e88576c)
+NodeSet has created a testnet deployment of Constellation on Holesky. The Directory contract is located at this address: [0x925D0700407fB0C855Ae9903B3a2727F1e88576c](https://holesky.etherscan.io/address/0x925D0700407fB0C855Ae9903B3a2727F1e88576c)
 
 [Gravita has also launched a deployment of Constellation](https://app.gravitaprotocol.com/constellation/xreth) on Ethereum mainnet. The Directory contract is located at this address: [0x4343743dBc46F67D3340b45286D8cdC13c8575DE](https://etherscan.io/address/0x4343743dBc46F67D3340b45286D8cdC13c8575DE)
