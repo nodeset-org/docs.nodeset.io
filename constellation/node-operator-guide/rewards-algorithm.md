@@ -14,6 +14,12 @@ In order to initiate each reward processing, we then scan for events between the
 
 ### MerkleClaimSubmitted
 
+{% hint style="info" %}
+NodeSet does not reimplement or duplicate the complicated logic for Rocket Pool's Merkle claim rewards system. Instead, all Merkle rewards are split among all node operators only according to their participation rate (i.e. their minipools' specific rewards algorithm is not taken into account). \
+\
+For example, since Saturn 0 changed rewards allocations after Constellation was launched, any minipools created after Saturn 0 will receive slightly less Merkle rewards (and vice-versa: users that created minipools using the prior system will receive slightly more Merkle rewards). This effect is averaged out, so if more Saturn 0 minipools are added to the system over time, this difference will be reduced.
+{% endhint %}
+
 When a `MerkleClaimSubmitted` event is found, the first thing we do is find the block of the _previous_ `MerkleClaimSubmitted` event (using the block the contract was deployed if there is no previous `MerkleClaimSubmitted` event). We'll call this value `fundingStartBlock`. We then assign the block of the new `MerkleClaimSubmitted` event to a value called `fundingEndBlock` and the `amount` in the new `MerkleClaimSubmitted` event to `fundingAmount`.&#x20;
 
 The idea here is that the rewards from the current `MerkleClaimSubmitted` event represent the work done in the period of time since the last `MerkleClaimSubmitted` event, and so the rewards of the current event should be distributed among all validators active between the previous event and the current one.
