@@ -41,7 +41,7 @@ Let's say we have 4 validators:
 
 We have a new `MerkleClaimSubmitted` event at block `413000` with an amount of `50000` and the previous `MerkleClaimSubmitted` event at block `410000` (the amount of the previous event is irrelevant).
 
-<img src="../../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (1).svg" alt="" class="gitbook-drawing">
 
 Each validator would have the following shares:
 
