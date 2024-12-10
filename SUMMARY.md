@@ -50,6 +50,7 @@
   * [Prerequisites](constellation/node-operator-guide/prerequisites.md)
   * [Registering your Node with Constellation](constellation/node-operator-guide/registering-your-node-with-constellation.md)
   * [Creating and Running Minipools](constellation/node-operator-guide/creating-and-running-minipools.md)
+  * [Rewards Algorithm](constellation/node-operator-guide/rewards-algorithm.md)
 * [Administrator](constellation/administrator.md)
 * [Treasurer](constellation/treasurer.md)
 * [FAQ](constellation/faq.md)
