@@ -14,7 +14,7 @@ There are three levels of timelocks in Constellation:
 The timelocks are set to small values during Constellation's initial deployment to ensure administrators can react quickly. These values will be increased after a successful launch.
 {% endhint %}
 
-<table><thead><tr><th width="112">Name</th><th width="162">Current Length</th><th>Affected Parameters</th></tr></thead><tbody><tr><td>Short</td><td>1 block</td><td>ETH/RPL system ratios, liquidity reserve requirements, NO temporary bond value, operator removal</td></tr><tr><td>Medium</td><td>2 blocks</td><td>Treasury fees, NO fees, mint fee</td></tr><tr><td>Long</td><td>3 blocks</td><td>Contract upgrades</td></tr></tbody></table>
+<table><thead><tr><th width="112">Name</th><th width="162">Current Length</th><th>Affected Parameters</th></tr></thead><tbody><tr><td>Short</td><td>1 block</td><td>ETH/RPL system ratios, liquidity reserve requirements, NO temporary bond value, operator removal</td></tr><tr><td>Medium</td><td>1 block</td><td>Treasury fees, NO fees, mint fee</td></tr><tr><td>Long</td><td>7 days</td><td>Contract upgrades</td></tr></tbody></table>
 
 ### Downtime Risk
 
