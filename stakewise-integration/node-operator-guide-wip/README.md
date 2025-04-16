@@ -1,6 +1,8 @@
-# Node Operator Guide
+---
+description: Quick start guide for NodeSet operators serving StakeWise vaults
+---
 
-Although it is technically possible to run a StakeWise node alongside an existing Ethereum node, we recommend using a completely isolated system, and this guide assumes this is the case.
+# Node Operator Guide
 
 {% hint style="info" %}
 There are technical limitations which make it very difficult to run a fully custom node environment for NodeSet's StakeWise integration. Therefore, you must use [the Hyperdrive client](https://github.com/nodeset-org/hyperdrive) to connect appropriately to NodeSet's web services.
@@ -30,9 +32,9 @@ Open the config UI with `hyperdrive service config`, navigate to the `Modules` s
 You must send ETH to your node wallet so that Hyperdrive can submit deposit transactions for your validators. This is an important mechanism in StakeWise to prevent griefing attacks ([see here for more information](https://docs.nodeset.io/stakewise-integration/faq#why-do-node-operators-need-to-pay-to-register-validators)).
 {% endhint %}
 
-We recommend **at least** 0.01 ETH for each validator key you generate. For example, if you generate 5 keys, you should fund your node wallet with **at least** 0.05 ETH.
+We recommend funding your node wallet with 0.01 ETH to pay the gas costs of generating validators. Each validator costs approximately .00034 ETH at 1 gwei gas costs. If you run out of ETH in your wallet, you won't be able to create more validators, even if there are assets available.
 
-For Hoodi, you can use a faucet. NodeSet has not verified these faucets. Use them at your own risk!
+For testing on the Hoodi network, you can obtain funds using a faucet. NodeSet has not verified these faucets. Use them at your own risk!
 
 * [https://hoodi-faucet.pk910.de/](https://hoodi-faucet.pk910.de/)
 
@@ -48,13 +50,28 @@ b) Use the dashboard to [add your new node address](../../nodeset-dashboard/auth
 hyperdrive stakewise wallet generate-keys 
 ```
 
-This command will generate new validator keys, upload them to NodeSet so we can refer them to the StakeWise vault, and add them to your validator client and sw\_operator containers.
+You can optionally provide the `--count` flag, along with the number of keys to generate, instead of answering the question within the interactive prompt.
 
-After this finishes, the status command should show your new validator public keys:
+You should see output like this:
 
-```bash
-hyperdrive stakewise status
 ```
+Note: key generation is an expensive process, this may take a long time! Progress will be printed as each key is generated.
+
+Generated 0x903bee1b9f05c133548f4afae99b7c51cfd1646389a629554a49bf69cb7ce0e4216ee50e3b882a665ca595949fff65aa (1/2) in 4.586464858s
+Generated 0xa5172893d3252995c8a7178a88b7798edbc96b4733629eb96e04bd52b716645bd59cd2b1fb470ada8ac0b3d84cd84746 (2/2) in 4.697215708s
+Completed in 9.283731898s.
+
+You now have 2 validator keys ready for deposits:
+	0x903bee1b9f05c133548f4afae99b7c51cfd1646389a629554a49bf69cb7ce0e4216ee50e3b882a665ca595949fff65aa
+	0xa5172893d3252995c8a7178a88b7798edbc96b4733629eb96e04bd52b716645bd59cd2b1fb470ada8ac0b3d84cd84746
+
+Restarting Validator Client to load the new keys... done!
+Your new keys are now loaded.
+Your node will deposit with them automatically once the vault has been funded.
+It will start attesting for those validators automatically once they have been activated.
+```
+
+This will let you generate one or more keys, add then to your Validator Client, and mark them as available for new deposits. Note that the Hyperdrive daemon will verify any new keys haven't been used for deposits previously before providing them to StakeWise.
 
 Additionally, you should see those validator keys in the NodeSet dashboard at [https://nodeset.io/dashboard/stakewise/validators](https://nodeset.io/dashboard/stakewise/validators).
 
@@ -69,28 +86,10 @@ Once NodeSet registers your node, ETH may be automatically deposited into your v
 As always, you should [use the same best practices for maintaining your operation](../../node-operators/best-practices/).
 
 {% hint style="warning" %}
-Be careful! Even if there are no validators activated when your node goes down, Ethereum never goes down, so deposits might be made to those validators even while the node is offline. If this happens, those validators will be penalized, and you may eventually be ejected from NodeSet!
+Be careful! Your node must be online 100% of the time! If your node goes down, any active validators will be penalized, and you may be ejected from NodeSet!&#x20;
 {% endhint %}
 
-If you no longer wish to participate as an operator for any of NodeSet's StakeWise vaults, please contact us at _info@nodeset.io_. We are working on a way to exit your operation automatically through the dashboard, but this is not ready yet.
-
-## Validator Lifecycle
-
-The following is StakeWise-specific. For a refresher on the Ethereum validator lifecycle, see [this page](https://www.attestant.io/posts/understanding-the-validator-lifecycle/).
-
-###
-
-## Disaster Recovery
-
-{% hint style="info" %}
-Operators do NOT need to exit StakeWise validators to migrate or recover their nodes! As long as you still have your wallet mnemonic, you can recover your StakeWise validator keys.
-{% endhint %}
-
-In addition to [the usual steps you take to recover your wallet on new hardware](../../node-operators/hyperdrive/disaster-recovery-and-node-migration.md#wallet-recovery), you also need to recover your StakeWise keys specifically. In the future, this will be done automatically, but currently you will need to run the following command manually to recover your StakeWise configuration:
-
-`hyperdrive stakewise wallet generate-keys --count [123]`
-
-In the above command, \[123] should be the number of keys you have already already uploaded to NodeSet, which you can view at [https://nodeset.io/dashboard/stakewise/validators](https://nodeset.io/dashboard/stakewise/validators).
+If you no longer wish to participate as an operator for any of NodeSet's StakeWise vaults, you may exit your validators at any time. **Make sure to also contact us at** [_**info@nodeset.io**_](mailto:info@nodeset.io) **so we can help you ensure your node was correctly exited.**
 
 ## Claiming Rewards
 

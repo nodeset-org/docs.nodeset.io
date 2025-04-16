@@ -36,8 +36,8 @@
   * [Claiming Rewards](stakewise-integration/node-operator-guide-wip/claiming-rewards.md)
   * [Monitoring the StakeWise Module](stakewise-integration/node-operator-guide-wip/monitoring-the-stakewise-module.md)
   * [Node Operator Blacklisting](stakewise-integration/node-operator-guide-wip/node-operator-blacklisting.md)
-  * [How it Works](stakewise-integration/node-operator-guide-wip/how-it-works.md)
   * [Key Recovery](stakewise-integration/node-operator-guide-wip/key-recovery.md)
+  * [How it Works](stakewise-integration/node-operator-guide-wip/how-it-works.md)
 * [Security Information](stakewise-integration/security-information.md)
 
 ## Constellation

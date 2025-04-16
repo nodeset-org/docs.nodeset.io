@@ -1,10 +1,14 @@
 ---
 description: >-
-  In the event that you lose your StakeWise validator keys and need to
-  regenerate them, Hyperdrive makes it easy to recover.
+  In the event that you lose or wish to migrate your StakeWise validator keys,
+  Hyperdrive makes it easy to recover by regenerating the StakeWise keys.
 ---
 
 # Key Recovery
+
+{% hint style="danger" %}
+Operators do NOT need to exit StakeWise validators to migrate or recover a node! As long as you still have your wallet mnemonic, you can recover your StakeWise validator keys.
+{% endhint %}
 
 Start by recovering the Hyperdrive wallet itself from the mnemonic if you haven't already done so:
 
@@ -18,7 +22,7 @@ Once that's done, you can recover your StakeWise validator keys:
 hyperdrive stakewise wallet recover-keys
 ```
 
-This will ask NodeSet.io which keys you have registered already, and procedurally generate validator keys until it finds all of them:
+This will ask nodeset.io which keys you have registered already, and procedurally generate validator keys until it finds all of them:
 
 ```
 The following validator keys have been registered and can be recovered:
@@ -49,4 +53,4 @@ Your recovered keys are now loaded.
 Your node can now attest for these validators.
 ```
 
-Note that this will only recover keys that you used for deposits already; it won't all of the keys you ever generated if later ones haven't been used yet. You'll have to create them again with the `hyperdrive stakewise wallet generate-keys` command.
+Note that this will only recover keys that you used for deposits already; it won't recover any keys that  that haven't been used yet. You'll have to create new keys again with the `hyperdrive stakewise wallet generate-keys` command. Remember to always keep enough ETH in your node wallet to fund the creation of new validators with your unused keys.
