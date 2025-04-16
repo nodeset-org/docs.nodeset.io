@@ -37,7 +37,7 @@
   * [Monitoring the StakeWise Module](stakewise-integration/node-operator-guide-wip/monitoring-the-stakewise-module.md)
   * [Node Operator Blacklisting](stakewise-integration/node-operator-guide-wip/node-operator-blacklisting.md)
   * [How it Works](stakewise-integration/node-operator-guide-wip/how-it-works.md)
-  * [Quick STart](stakewise-integration/node-operator-guide-wip/quick-start.md)
+  * [Key Recovery](stakewise-integration/node-operator-guide-wip/key-recovery.md)
 * [Security Information](stakewise-integration/security-information.md)
 
 ## Constellation
