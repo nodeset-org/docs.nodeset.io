@@ -18,6 +18,12 @@ There are technical limitations which make it very difficult to run a fully cust
 
 [See this page for more information on setting up Hyperdrive](https://docs.nodeset.io/node-operators/hyperdrive). Remember to enable support for StakeWise during the setup process!
 
+#### Enabling the StakeWise Module
+
+StakeWise support is currently **open to all registered node operators**. There is no permissions gate to use it.
+
+Open the config UI with `hyperdrive service config`, navigate to the `Modules` section, and open the `StakeWise` module. Check it to enable it, then save and exit. You will be prompted to restart your services in order to launch the StakeWise module.
+
 ### **3. Fund your node wallet**
 
 {% hint style="info" %}
