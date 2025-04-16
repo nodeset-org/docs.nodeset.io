@@ -58,7 +58,7 @@ Ensure you store your secrets safely and regularly test your access procedures. 
 
 ### 7. Maintain your node
 
-Once NodeSet registers your node, we will submit batches of deposit data into the vault, and ETH may be automatically deposited into these validators at any time.
+Once NodeSet registers your node, ETH may be automatically deposited into your validators at any time.
 
 As always, you should [use the same best practices for maintaining your operation](../../node-operators/best-practices/).
 
@@ -72,26 +72,7 @@ If you no longer wish to participate as an operator for any of NodeSet's StakeWi
 
 The following is StakeWise-specific. For a refresher on the Ethereum validator lifecycle, see [this page](https://www.attestant.io/posts/understanding-the-validator-lifecycle/).
 
-### Key Generation & Uploading
-
-1. Operators generate and upload public validator keys to NodeSet
-2. NodeSet regularly uploads these keys to partner vaults using a randomized round-robin operator selection algorithm to ensure assets are assigned equally
-
-### Deposit & Activation
-
-1.  When there is enough ETH in the vault to make a validator, the owner of the next key in line must submit a deposit transaction
-
-    a. If this transaction is not made within an appropriate timeframe, NodeSet will [blacklist the operator](node-operator-blacklisting.md) and create a new list of keys for the vault
-2. After this transaction occurs, the vault automatically makes a 32 ETH deposit to the Ethereum deposit contract on behalf of the supplied validator key, and the StakeWise Oracle DAO collects a pre-signed exit message using a predicted index.
-3. The validator goes through the Ethereum deposit queue and is activated as usual
-4. Once an index is assigned to the validator by Ethereum's consensus layer, Hyperdrive automatically sends a pre-signed exit message to NodeSet for safety.
-
-### Exiting
-
-1. If the validator's performance is below the requirements of [NodeSet's Operator Policies](../../node-operators/node-operator-policies.md), NodeSet will exit the validator using the exit message on hand.
-2. Otherwise, the validator will remain online until:
-   1. The operator exits the validator using the `hyperdrive stakewise validator exit` command
-   2. There is not enough liquidity in the vault for liquid stakers wishing to redeem their staked ETH, so the StakeWise Oracle DAO will exit validators as necessary using its copy of the signed exit message
+###
 
 ## Disaster Recovery
 
