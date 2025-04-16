@@ -26,15 +26,13 @@ You must send ETH to your node wallet so that Hyperdrive can submit deposit tran
 
 We recommend **at least** 0.01 ETH for each validator key you generate. For example, if you generate 5 keys, you should fund your node wallet with **at least** 0.05 ETH.
 
-For Holesky, you can use one of the following faucets. Be aware we have not verified these faucets. Use them at your own risk!
+For Hoodi, you can use a faucet. NodeSet has not verified these faucets. Use them at your own risk!
 
-* [https://www.holeskyfaucet.io/](https://www.holeskyfaucet.io/)
-* [https://holesky-faucet.pk910.de/](https://holesky-faucet.pk910.de/)
-* [https://faucet.quicknode.com/ethereum/holesky](https://faucet.quicknode.com/ethereum/holesky)
+* [https://hoodi-faucet.pk910.de/](https://hoodi-faucet.pk910.de/)
 
 ### 4. Add your node address to your NodeSet account
 
-a) Go to [https://nodeset.io/dashboard](https://nodeset.io/dashboard) to create or login to your NodeSet account. Users who have gone through the onboarding process will automatically be given the permission to access the StakeWise portion of the dashboard.
+a) Go to [https://nodeset.io/dashboard](https://nodeset.io/dashboard) to create or login to your NodeSet account. Users who have gone through the on-boarding process will automatically be given the permission to access the StakeWise portion of the dashboard.
 
 b) Use the dashboard to [add your new node address](../../nodeset-dashboard/authorizing-your-node.md).
 
