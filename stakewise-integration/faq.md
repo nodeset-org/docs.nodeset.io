@@ -6,7 +6,7 @@ The vault fee is split between the vault admin, NodeSet, and operators via smart
 
 #### Who is chosen to be a StakeWise vault operator for NodeSet?
 
-All NodeSet members are eligible for participation, but NodeSet will not add operators to the StakeWise vaults until there are sufficient deposits.
+All NodeSet operators are eligible for participation.
 
 #### What happens if a node operator loses their keys or becomes incapacitated?
 
@@ -16,20 +16,4 @@ Note that even in the case where both NodeSet and our node operators are offline
 
 #### Why do Node Operators need to pay to register validators?
 
-This is a StakeWise requirement to prevent vaults from being exploited by operators that intentionally create and exit validators at the expense of the vault. Validator registration costs approximately 0.01 ETH at 30 gwei gas and can happen at any time. Even when running the maximum number of validators, ongoing vault activity may cause exits and new registrations, so we recommend operators always keep a minimum balance of 0.1 ETH in their SW node wallet. Payback period for a validator depends on the vault parameters for operator compensation, but as a rule of thumb, it takes operators approximately one week of uptime to repay gas costs for new validator registration.
-
-**Why do I see these warnings in my Hyperdrive logs when running the StakeWise package?**
-
-```
-WARNING  There are no available validators in the current deposit data to proceed with registration. To register additional validators, you must upload new deposit data.
-```
-
-```
-WARNING  Cannot find validator with public key 0x... in keystores.
-```
-
-```
-WARNING  Deposit data tree root and vault's validators root don't match. Have you updated vault deposit data?
-```
-
-StakeWise's client code was not designed to be used with many decentralized operators, so these lines in your logs (i.e. `hyperdrive service logs`) are expected. We are working with the StakeWise team to improve their tooling to support our use-case more gracefully.
+This is a StakeWise requirement to prevent vaults from being exploited by operators that intentionally create and exit validators at the expense of the vault. Validator registration costs approximately 0.0003 ETH with a 1 gwei gas price and may happen at any time. Even when running the maximum number of validators, ongoing vault activity may cause exits and new registrations, so we recommend operators always keep a minimum balance of 0.01 ETH in their SW node wallet. The payback period for a validator depends on the vault parameters for operator compensation, but usually, it only takes operators approximately a week or two of uptime to repay gas costs for new validator registration.

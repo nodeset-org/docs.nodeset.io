@@ -30,6 +30,7 @@
 ## StakeWise Integration
 
 * [Introduction](stakewise-integration/introduction.md)
+* [What's New in v1.2](stakewise-integration/whats-new-in-v1.2.md)
 * [FAQ](stakewise-integration/faq.md)
 * [Node Operator Guide](stakewise-integration/node-operator-guide-wip/README.md)
   * [Claiming Rewards](stakewise-integration/node-operator-guide-wip/claiming-rewards.md)
