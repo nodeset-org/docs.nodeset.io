@@ -94,5 +94,5 @@ If you no longer wish to participate as an operator for any of NodeSet's StakeWi
 ## Claiming Rewards
 
 {% hint style="info" %}
-Node Operator rewards for StakeWise validators are not live yet, but rewards are already accruing! We will update this page when operators can claim rewards for the StakeWise validators they run.
+Node Operator rewards for StakeWise validators are not live yet, but rewards are already accruing! We will update this page when operators can claim rewards for servicing StakeWise validators.
 {% endhint %}
