@@ -109,12 +109,6 @@ In the above command, \[123] should be the number of keys you have already alrea
 
 ## Claiming Rewards
 
-Once your node is registered with the rewards splitter contract, you may claim rewards using this command:
-
-```bash
-hyperdrive stakewise wallet claim-rewards
-```
-
 {% hint style="info" %}
-Because adding users to the splitter contracts and the vault is costly and NodeSet currently pays this fee, we will initially do it manually and irregularly, so there may be a delay before you begin accruing rewards. Please be patient while we work to improve and automate this flow over time. In the future, users will instead submit their own registration transactions in the future. As a reminder, you are already responsible for new validator registration -- [see here for more info](../faq.md#why-do-node-operators-need-to-pay-to-register-nodes).
+Node Operator rewards for StakeWise validators are not live yet, but rewards are already accruing! We will update this page when operators can claim rewards for the StakeWise validators they run.
 {% endhint %}
