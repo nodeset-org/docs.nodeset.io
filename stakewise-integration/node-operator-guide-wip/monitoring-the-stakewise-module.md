@@ -74,6 +74,20 @@ hyperdrive_sw_operator  | 2025-04-16 16:10:10 INFO     Waiting for transaction 0
 hyperdrive_sw_operator  | 2025-04-16 16:10:14 INFO     Successfully registered validator(s) with public key(s) 0x903bee1b9f05c133548f4afae99b7c51cfd1646389a629554a49bf69cb7ce0e4216ee50e3b882a665ca595949fff65aa
 ```
 
+If you see many lines like this in your logs:
+
+```
+WARNING  https://v3-oracle-mainnet-2.el.p2p.world response: {'error': 'invalid_validator_index'}
+```
+
+You may want to consider **resetting the StakeWise Operator database** and let it rebuilt. Run the following command:
+
+```
+docker stop hyperdrive_sw_operator && docker rm hyperdrive_sw_operator && docker volume rm hyperdrive_swdata && hyperdrive s s
+```
+
+Then watch your Operator logs once more to watch it rebuild. Once it's done, it will try depositing again if assets are still available. Note that this is a CPU intensive process until it's done rebuilding its indices.&#x20;
+
 ### Daemon Relay
 
 The portion of the Hyperdrive StakeWise daemon that handles communication with the StakeWise operator is known as the **relay**. The daemon splits its relay logs into a separate file for simplicity, which you can view with this command:
