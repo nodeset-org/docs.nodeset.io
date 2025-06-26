@@ -2,7 +2,7 @@
 
 This page describes the policies applied to NodeSet node operators. These policies may be updated at any time, with material changes announced in advance.
 
-All effectiveness checks referenced below are derived from the reports by the [rated.network](http://rated.network) API.
+All effectiveness checks referenced below are derived from the reports by the [beaconcha.in](https://beaconcha.in/) API.
 
 ***
 
@@ -22,7 +22,7 @@ All effectiveness checks referenced below are derived from the reports by the [r
 **Ejections from NodeSet are PERMANENT!** If you have an issue with your node, you should reach out to us as soon as possible to ensure you are not ejected. We will work with you to exit your validators or rescue your node to help you avoid ejection.
 {% endhint %}
 
-Operators must continuously meet performance requirements to operate with NodeSet. This means that **node operator effectiveness must remain above the minimum threshold of 95% at all times**. We understand that temporary downtime is unavoidable for certain maintenance tasks and unusual events outside operator control, but **all operators should aim for 100% uptime**.
+Operators must continuously meet performance requirements to operate with NodeSet. This means that **node operator effectiveness must remain above the minimum threshold of 97% at all times**. We understand that temporary downtime is unavoidable for certain maintenance tasks and unusual events outside operator control, but **all operators should aim for 100% uptime**.
 
 **Operators who do not meet performance requirements will be ejected.** **NodeSet will not make exceptions for any operator for any reason other than large, network-level events.**
 
