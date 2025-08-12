@@ -98,7 +98,7 @@ Your recovered keys are now loaded.
 Your node can now attest for these validators.
 ```
 
-Note that this will only recover keys that you used for deposits already; it won't recover any keys that  that haven't been used yet. You'll have to create new keys again with the `hyperdrive stakewise wallet generate-keys` command. Remember to always keep enough ETH in your node wallet to fund the creation of new validators with your unused keys.
+Note that the `recover-keys` command will only recover keys that you used for deposits already. It won't recover any keys that haven't been used yet, so you'll have to generate new keys again with the `hyperdrive stakewise wallet generate-keys` command. Remember to always keep enough ETH in your node wallet to fund the creation of new validators with your unused keys.
 
 ### Recovering the Constellation Module
 
