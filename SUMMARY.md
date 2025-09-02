@@ -32,11 +32,11 @@
 * [Introduction](stakewise-integration/introduction.md)
 * [What's New in v1.2](stakewise-integration/whats-new-in-v1.2.md)
 * [FAQ](stakewise-integration/faq.md)
-* [Node Operator Guide](stakewise-integration/node-operator-guide-wip/README.md)
-  * [Monitoring the StakeWise Module](stakewise-integration/node-operator-guide-wip/monitoring-the-stakewise-module.md)
-  * [Claiming Rewards](stakewise-integration/node-operator-guide-wip/claiming-rewards.md)
-  * [Key Recovery](stakewise-integration/node-operator-guide-wip/key-recovery.md)
-  * [How it Works](stakewise-integration/node-operator-guide-wip/how-it-works.md)
+* [Node Operator Guide](stakewise-integration/node-operator-guide/README.md)
+  * [Monitoring the StakeWise Module](stakewise-integration/node-operator-guide/monitoring-the-stakewise-module.md)
+  * [Claiming Rewards](stakewise-integration/node-operator-guide/claiming-rewards.md)
+  * [Key Recovery](stakewise-integration/node-operator-guide/key-recovery.md)
+  * [How it Works](stakewise-integration/node-operator-guide/how-it-works.md)
 * [Security Information](stakewise-integration/security-information.md)
 
 ## Constellation
