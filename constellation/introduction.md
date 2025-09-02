@@ -7,6 +7,10 @@ description: >-
 
 # Overview
 
+{% hint style="danger" %}
+Constellation has been deprecated due to lack of rETH demand in Rocket Pool. All NodeSet services are now currently provided via our [StakeWise integration](broken-reference).
+{% endhint %}
+
 **The Problem**
 
 To be maximally trustless, Rocket Pool requires node operators to post a bond for each validator. This restricts growth by requiring a constant supply of NOs who can afford this bond and leads to an uneven distribution of assets across nodes.
