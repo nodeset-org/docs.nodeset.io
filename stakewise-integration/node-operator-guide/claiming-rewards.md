@@ -20,6 +20,10 @@ When the rewards allocation begins processing, it takes a minimum of one day, bu
 
 Once the allocation from the vault is processed, **you must return to the dashboard** **again** to submit a transaction that will claim the rewards. This will finalize the process and finally move the rewards into your receiver account.
 
+{% hint style="warning" %}
+The NodeSet server will only update claim statuses every \~10 minutes. If you submit multiple claim transactions, only the first one will work and the rest will fail!
+{% endhint %}
+
 The final transaction must be submitted from the receiver address provided in step (1) or StakeWise will reject the transaction. This means that **you must maintain ownership of the receiver address until the rewards process is complete** so that you can sign the final transaction from it. To ensure success, NodeSet requires that you withdraw your rewards to one of your sign-in addresses.
 
 {% hint style="info" %}
