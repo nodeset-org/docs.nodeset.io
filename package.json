@@ -1,0 +1,14 @@
+{
+  "name": "docs-nodeset-io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Documentation for NodeSet",
+  "scripts": {
+    "build": "honkit build . ./_book",
+    "serve": "honkit serve"
+  },
+  "devDependencies": {
+    "gitbook-plugin-hints": "^1.0.2",
+    "honkit": "^6.2.2"
+  }
+}

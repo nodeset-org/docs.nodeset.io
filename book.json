@@ -1,0 +1,16 @@
+{
+  "title": "NodeSet Documentation",
+  "description": "Documentation for NodeSet",
+  "plugins": ["hints"],
+  "pluginsConfig": {},
+  "ignores": [
+    "node_modules",
+    "_book",
+    "package.json",
+    "package-lock.json",
+    "book.json",
+    "LICENSE",
+    ".github",
+    ".gitignore"
+  ]
+}

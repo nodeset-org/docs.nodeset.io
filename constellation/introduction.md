@@ -8,7 +8,7 @@ description: >-
 # Overview
 
 {% hint style="danger" %}
-Constellation has been deprecated due to lack of rETH demand in Rocket Pool. All NodeSet services are now currently provided via our [StakeWise integration](broken-reference).
+Constellation has been deprecated due to lack of rETH demand in Rocket Pool. All NodeSet services are now currently provided via our [StakeWise integration](../stakewise-integration/introduction.md).
 {% endhint %}
 
 **The Problem**
