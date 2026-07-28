@@ -2,7 +2,7 @@
 
 ### **Packages**
 
-On its own, Hyperdrive does not do anything other than provide a CLI and TUI interface, and users are required to install _packages_ that provide meaningful functionality. Currently, there are only two packages available for Hyperdrive: [Constellation](broken-reference) and [StakeWise](../../stakewise-integration/introduction.md).&#x20;
+On its own, Hyperdrive does not do anything other than provide a CLI and TUI interface, and users are required to install _packages_ that provide meaningful functionality. Currently, there are only two packages available for Hyperdrive: [Constellation](../../constellation/introduction.md) and [StakeWise](../../stakewise-integration/introduction.md).&#x20;
 
 Each package has its own requirements and usage, so make sure to check out the specific documentation for each of the packages you choose to use.
 
